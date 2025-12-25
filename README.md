@@ -1,6 +1,6 @@
 # Finetune Environment Documentation
 
-Bu doküman, `../finetune` konumunda bulunan Python sanal ortamının (virtual environment) nasıl aktive edileceği, içeriği ve sıfırdan nasıl oluşturulacağı hakkında bilgiler içerir.
+Bu doküman, `../finetune` konumunda bulunan Python sanal ortamının (virtual environment) nasıl aktive edileceği, içeriği, sıfırdan nasıl oluşturulacağı ve **bu projenin nasıl kullanılacağı** hakkında bilgiler içerir.
 
 ## Ortamı Aktive Etme
 
@@ -15,6 +15,55 @@ Ortamdan çıkmak için:
 ```bash
 deactivate
 ```
+
+## Proje Kullanımı
+
+Bu proje, **TinyLlama-1.1B** modelini `data.json` içerisindeki verilerle eğitmek (finetune) ve test etmek için geliştirilmiştir.
+
+### 1. Modeli Eğitme (Finetuning)
+
+Modeli `data.json` verisi ile eğitmek için şu komutu çalıştırın:
+
+```bash
+python train.py
+```
+
+Bu işlem tamamlandığında, eğitilmiş model (adapter) dosyaları `./out` klasörüne kaydedilecektir.
+Eğitim süresince `TrainingArguments` kullanıldığı için checkpointler de burada saklanır.
+
+### 2. Modeli Test Etme (Inference)
+
+Eğitilmiş modeli test etmek için `test.py` dosyasını kullanın. Bu dosya `./out` klasöründeki adapter'ı ve base modeli yükler, bir soru sorar ve cevabı ekrana basar.
+
+```bash
+python test.py
+```
+
+*Not: Eğer `out` klasörü yoksa veya boşsa, önce eğitimi çalıştırmanız gerekir.*
+
+### 3. Base Model ile Test Etme
+
+Eğitimden önceki (ham) modelin nasıl cevap verdiğini görmek için `test_base.py` dosyasını kullanabilirsiniz. Bu script, herhangi bir LoRA adapter kullanmadan saf TinyLlama modelini çalıştırır.
+
+```bash
+python test_base.py
+```
+
+### 4. Veri Seti
+
+`data.json` dosyası, eğitim için kullanılan soru-cevap çiftlerini içerir. Formatı şöyledir:
+
+```json
+[
+    {
+        "instruction": "Soru...",
+        "response": "Cevap..."
+    },
+    ...
+]
+```
+
+---
 
 ## Yüklü Kütüphaneler
 
@@ -32,7 +81,7 @@ Aşağıda ortamda yüklü olan temel kütüphaneler ve versiyonları listelenmi
 | accelerate | 1.12.0 |
 | huggingface-hub | 0.36.0 |
 
-(Tam liste `requirements.txt` bölümünde mevcuttur.)
+(Tam liste aşağıda `requirements.txt` bölümünde mevcuttur.)
 
 ## Ortamı Sıfırdan Kurma
 

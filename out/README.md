@@ -1,12 +1,15 @@
 ---
 base_model: TinyLlama/TinyLlama-1.1B-Chat-v1.0
-library_name: transformers
+library_name: peft
 model_name: out
 tags:
-- generated_from_trainer
+- base_model:adapter:TinyLlama/TinyLlama-1.1B-Chat-v1.0
+- lora
 - sft
+- transformers
 - trl
 licence: license
+pipeline_tag: text-generation
 ---
 
 # Model Card for out
@@ -34,6 +37,7 @@ This model was trained with SFT.
 
 ### Framework versions
 
+- PEFT 0.18.0
 - TRL: 0.26.2
 - Transformers: 4.57.3
 - Pytorch: 2.5.1+cu121
