@@ -1,0 +1,402 @@
+[
+    {
+        "instruction": "Arch Linux'ta paket veritabanını güncelleyip tüm sistemi nasıl yükseltirim?",
+        "response": "sudo pacman -Syu komutunu kullanarak sistemi güncelleyebilirsin."
+    },
+    {
+        "instruction": "Bir metin dosyasını terminal üzerinden vi editörü ile nasıl açarım?",
+        "response": "vi dosya_adi komutuyla dosyayı düzenlemek üzere açabilirsin."
+    },
+    {
+        "instruction": "Python'da bir sözlük (dictionary) veri tipi nasıl tanımlanır?",
+        "response": "sozluk = {'anahtar': 'deger'} şeklinde süslü parantezler kullanılarak tanımlanır."
+    },
+    {
+        "instruction": "Linux'ta bir dosyanın izinlerini nasıl değiştiririm?",
+        "response": "chmod komutu (örneğin: chmod 755 dosya_adi) ile izinleri değiştirebilirsin."
+    },
+    {
+        "instruction": "Arch Linux'ta yüklü olan ancak artık ihtiyaç duyulmayan yetim paketleri nasıl kaldırırım?",
+        "response": "sudo pacman -Rs $(pacman -Qdtq) komutu ile gereksiz bağımlılıkları temizleyebilirsin."
+    },
+    {
+        "instruction": "Python'da 'list comprehension' yapısına bir örnek verir misin?",
+        "response": "yeni_liste = [x**2 for x in range(10)] ifadesi 0'dan 9'a kadar sayıların karesini alan bir liste oluşturur."
+    },
+    {
+        "instruction": "Linux'ta çalışan süreçleri (process) anlık olarak nasıl izlerim?",
+        "response": "top veya daha görsel bir arayüz için htop komutunu kullanabilirsin."
+    },
+    {
+        "instruction": "vi editöründe bir dosyayı kaydetmeden çıkmak için hangi komut kullanılır?",
+        "response": "Komut modundayken :q! yazarak değişiklikleri kaydetmeden çıkabilirsin."
+    },
+    {
+        "instruction": "Python'da bir fonksiyon nasıl tanımlanır?",
+        "response": "def fonksiyon_adi(): anahtar kelimesi ile tanımlanır."
+    },
+    {
+        "instruction": "Bir dizindeki dosyaların boyutlarını okunabilir formatta nasıl listelerim?",
+        "response": "ls -lh komutu ile dosya boyutlarını KB, MB veya GB cinsinden görebilirsin."
+    },
+    {
+        "instruction": "Arch Linux'ta bir paketin bilgilerini (sürüm, bağımlılıklar vb.) nasıl görürüm?",
+        "response": "pacman -Qi paket_adi komutu ile yerel paket bilgilerini inceleyebilirsin."
+    },
+    {
+        "instruction": "Python'da bir string ifadeyi nasıl parçalara ayırırım?",
+        "response": "split() metodunu kullanarak (örneğin: metin.split(',')) ayırabilirsin."
+    },
+    {
+        "instruction": "Linux'ta 'grep' komutu ne işe yarar?",
+        "response": "Dosyalar içinde belirli bir metin kalıbını aramaya ve filtrelemeye yarar."
+    },
+    {
+        "instruction": "vi editöründe satır silmek için hangi kısayol kullanılır?",
+        "response": "Komut modundayken 'dd' tuşlarına basarak bulunduğun satırı silebilirsin."
+    },
+    {
+        "instruction": "Python'da 'try-except' bloğu ne için kullanılır?",
+        "response": "Hata yönetimi yapmak ve programın çökmesini engellemek için kullanılır."
+    },
+    {
+        "instruction": "Linux'ta bir dosyanın sahibini nasıl değiştiririm?",
+        "instruction": "chown kullanici:grup dosya_adi komutu ile sahiplik bilgilerini değiştirebilirsin."
+    },
+    {
+        "instruction": "Arch Linux'ta paket önbelleğini (cache) nasıl temizlerim?",
+        "response": "sudo pacman -Sc komutu ile yüklenmemiş paketlerin önbelleğini silebilirsin."
+    },
+    {
+        "instruction": "Python'da 'pip' nedir?",
+        "response": "Python için paket yönetim sistemidir, dış kütüphaneleri yüklemeyi sağlar."
+    },
+    {
+        "instruction": "Linux'ta disk kullanım oranlarını nasıl kontrol ederim?",
+        "response": "df -h komutu ile bağlı disk bölümlerinin doluluk oranını görebilirsin."
+    },
+    {
+        "instruction": "vi editöründe metin aramak için ne yapılır?",
+        "response": "Komut modundayken / karakterinden sonra aranacak kelime yazılır."
+    },
+    {
+        "instruction": "Python'da 'tuple' ve 'list' arasındaki temel fark nedir?",
+        "response": "Listeler değiştirilebilir (mutable), tuple'lar ise değiştirilemez (immutable) yapıdadır."
+    },
+    {
+        "instruction": "Linux'ta sembolik link (shortcut) nasıl oluşturulur?",
+        "response": "ln -s hedef_dosya link_adi komutu ile oluşturulur."
+    },
+    {
+        "instruction": "Arch Linux'ta AUR paketlerini yönetmek için yaygın kullanılan araç nedir?",
+        "response": "yay veya paru gibi AUR yardımcıları (helpers) yaygın olarak kullanılır."
+    },
+    {
+        "instruction": "Python'da bir dosya nasıl okunur?",
+        "response": "with open('dosya.txt', 'r') as f: yapısı güvenli bir şekilde dosya okumayı sağlar."
+    },
+    {
+        "instruction": "Linux'ta 'ssh' anahtarı nasıl oluşturulur?",
+        "response": "ssh-keygen -t rsa komutu ile yeni bir anahtar çifti oluşturabilirsin."
+    },
+    {
+        "instruction": "vi editöründe insert (yazma) moduna nasıl geçilir?",
+        "response": "'i' tuşuna basarak yazma moduna geçiş yapabilirsin."
+    },
+    {
+        "instruction": "Python'da 'None' ifadesi neyi temsil eder?",
+        "response": "Bir değerin yokluğunu veya tanımlanmamış olduğunu temsil eden özel bir sabittir."
+    },
+    {
+        "instruction": "Linux'ta 'sudo' komutu ne işe yarar?",
+        "response": "Normal bir kullanıcının yetkili (root) haklarıyla komut çalıştırmasını sağlar."
+    },
+    {
+        "instruction": "Arch Linux'ta bir paketi kurmadan önce bağımlılıklarını nasıl listelerim?",
+        "response": "pacman -Si paket_adi komutu ile depodaki paket detaylarını ve bağımlılıklarını görebilirsin."
+    },
+    {
+        "instruction": "Python'da 'global' anahtar kelimesi ne işe yarar?",
+        "response": "Fonksiyon içinden fonksiyon dışındaki bir değişkene erişip onu değiştirmeyi sağlar."
+    },
+    {
+        "instruction": "Linux'ta bir portu hangi uygulamanın kullandığını nasıl bulurum?",
+        "response": "sudo lsof -i :port_numarasi veya netstat -tulpn komutlarını kullanabilirsin."
+    },
+    {
+        "instruction": "vi editöründe yapılan son işlemi nasıl geri alırım?",
+        "response": "Komut modundayken 'u' tuşuna basarak işlemi geri alabilirsin (undo)."
+    },
+    {
+        "instruction": "Python'da 'self' parametresi neyi ifade eder?",
+        "response": "Sınıf içinde oluşturulan nesnenin kendisine referans verir."
+    },
+    {
+        "instruction": "Linux'ta boş bir dosya nasıl oluşturulur?",
+        "response": "touch dosya_adi komutu ile boş bir dosya oluşturabilirsin."
+    },
+    {
+        "instruction": "Arch Linux'ta hostname (makine adı) nasıl değiştirilir?",
+        "response": "hostnamectl set-hostname yeni_ad komutu ile veya /etc/hostname dosyasını düzenleyerek."
+    },
+    {
+        "instruction": "Python'da 'range(5)' ifadesi hangi sayıları üretir?",
+        "response": "0, 1, 2, 3 ve 4 sayılarını üretir."
+    },
+    {
+        "instruction": "Linux'ta sistem loglarını nasıl takip ederim?",
+        "response": "journalctl -f komutu ile sistem günlüklerini canlı olarak izleyebilirsin."
+    },
+    {
+        "instruction": "vi editöründe bir kelimeyi toplu olarak değiştirmek için ne kullanılır?",
+        "response": ":%s/eski/yeni/g komutu dosyadaki tüm 'eski' kelimelerini 'yeni' ile değiştirir."
+    },
+    {
+        "instruction": "Python'da 'lambda' fonksiyonu nedir?",
+        "response": "Tek satırlık, isimsiz ve kısa süreli işlemler için kullanılan anonim fonksiyonlardır."
+    },
+    {
+        "instruction": "Linux'ta bir dosyanın içeriğini terminale nasıl yazdırırım?",
+        "response": "cat dosya_adi komutu ile dosya içeriğini görebilirsin."
+    },
+    {
+        "instruction": "Arch Linux'ta bir servisi (örneğin docker) başlangıçta çalışacak şekilde nasıl ayarlarım?",
+        "response": "sudo systemctl enable docker komutunu kullanabilirsin."
+    },
+    {
+        "instruction": "Python'da 'set' veri tipinin en büyük özelliği nedir?",
+        "response": "Aynı elemandan sadece bir tane barındırması (eşsiz elemanlar) ve sırasız olmasıdır."
+    },
+    {
+        "instruction": "Linux'ta 'alias' nedir?",
+        "response": "Uzun komutlara kısa takma adlar vermeyi sağlayan bir özelliktir."
+    },
+    {
+        "instruction": "vi editöründe imleci satır sonuna nasıl götürürüm?",
+        "response": "Komut modundayken '$' işaretine basarak satır sonuna gidebilirsin."
+    },
+    {
+        "instruction": "Python'da bir modül nasıl içe aktarılır?",
+        "response": "import modül_adi komutu ile kullanılır."
+    },
+    {
+        "instruction": "Linux'ta bir işlemin (process) ID'sini (PID) nasıl bulurum?",
+        "response": "pgrep islem_adi veya ps aux | grep islem_adi komutlarını kullanabilirsin."
+    },
+    {
+        "instruction": "Arch Linux'ta kurulu tüm paketleri nasıl listelerim?",
+        "response": "pacman -Q komutu ile sistemdeki tüm paketleri görebilirsin."
+    },
+    {
+        "instruction": "Python'da 'args' ve 'kwargs' ne için kullanılır?",
+        "response": "Fonksiyonlara değişken sayıda argüman göndermek için kullanılır."
+    },
+    {
+        "instruction": "Linux'ta bir dosyayı nasıl kopyalarım?",
+        "response": "cp kaynak_dosya hedef_konum komutu ile kopyalayabilirsin."
+    },
+    {
+        "instruction": "vi editöründe satır numaralarını nasıl aktif ederim?",
+        "response": ":set number komutu ile satır numaralarını görebilirsin."
+    },
+    {
+        "instruction": "Python'da bir listenin uzunluğunu nasıl bulurum?",
+        "response": "len(liste_adi) fonksiyonunu kullanarak bulabilirsin."
+    },
+    {
+        "instruction": "Linux'ta çevre değişkenlerini (environment variables) nasıl listelerim?",
+        "response": "printenv veya env komutları ile görebilirsin."
+    },
+    {
+        "instruction": "Arch Linux'ta bir paketi ve tüm ayar dosyalarını nasıl silerim?",
+        "response": "sudo pacman -Rnsc paket_adi komutu ile temiz bir kaldırma yapabilirsin."
+    },
+    {
+        "instruction": "Python'da 'is' ve '==' arasındaki fark nedir?",
+        "response": "'==' değer eşitliğini, 'is' ise bellek adresindeki nesne kimliği eşitliğini kontrol eder."
+    },
+    {
+        "instruction": "Linux'ta bir dosyanın tipini nasıl öğrenirim?",
+        "response": "file dosya_adi komutu ile dosyanın ASCII, binary veya script olduğunu görebilirsin."
+    },
+    {
+        "instruction": "vi editöründe dosyanın en başına nasıl gidilir?",
+        "response": "Komut modundayken 'gg' tuşlarına basarak gidebilirsin."
+    },
+    {
+        "instruction": "Python'da 'enumerate' fonksiyonu ne işe yarar?",
+        "response": "Döngülerde elemanla birlikte o elemanın indeksini de döndürmeyi sağlar."
+    },
+    {
+        "instruction": "Linux'ta 'tar' arşivi nasıl açılır?",
+        "response": "tar -xvf dosya.tar komutu ile arşivi dışarı çıkarabilirsin."
+    },
+    {
+        "instruction": "Arch Linux'ta yansıma (mirror) listesini nasıl güncellerim?",
+        "response": "reflector aracını kullanarak en hızlı aynaları /etc/pacman.d/mirrorlist dosyasına kaydedebilirsin."
+    },
+    {
+        "instruction": "Python'da bir sınıfın kalıtım (inheritance) alması nasıl sağlanır?",
+        "response": "class AltSinif(AnaSinif): şeklinde tanımlanarak sağlanır."
+    },
+    {
+        "instruction": "Linux'ta 'find' komutu ile dosya araması nasıl yapılır?",
+        "response": "find /dizin -name 'dosya_adi' komutu ile arama yapabilirsin."
+    },
+    {
+        "instruction": "vi editöründe bir satırı kopyalayıp (yank) altına nasıl yapıştırırım?",
+        "response": "'yy' ile kopyalayıp 'p' ile yapıştırabilirsin."
+    },
+    {
+        "instruction": "Python'da 'f-string' kullanımı nasıldır?",
+        "response": "f'Merhaba {isim}' şeklinde değişkenleri doğrudan string içine gömerek kullanılır."
+    },
+    {
+        "instruction": "Linux'ta bir komutun çıktısını bir dosyaya nasıl yönlendiririm?",
+        "response": "komut > dosya.txt (üzerine yazar) veya komut >> dosya.txt (sonuna ekler) şeklinde."
+    },
+    {
+        "instruction": "Arch Linux'ta sistem saatini ağ üzerinden nasıl senkronize ederim?",
+        "response": "timedatectl set-ntp true komutu ile yapabilirsin."
+    },
+    {
+        "instruction": "Python'da '__init__' metodunun görevi nedir?",
+        "response": "Sınıftan bir nesne türetildiğinde çalışan yapıcı (constructor) metoddur."
+    },
+    {
+        "instruction": "Linux'ta 'uptime' komutu neyi gösterir?",
+        "response": "Sistemin ne kadar süredir açık olduğunu ve yük ortalamasını gösterir."
+    },
+    {
+        "instruction": "vi editöründen kaydetmeden zorla çıkmak için ne yazılır?",
+        "response": ":q! yazılarak çıkılır."
+    },
+    {
+        "instruction": "Python'da bir listenin sonuna nasıl eleman eklenir?",
+        "response": "liste.append(eleman) metodu ile eklenir."
+    },
+    {
+        "instruction": "Linux'ta ağ arayüzlerini ve IP adreslerini nasıl görürüm?",
+        "response": "ip addr veya ifconfig komutlarını kullanabilirsin."
+    },
+    {
+        "instruction": "Arch Linux'ta bir paketin hangi dosyaları yüklediğini nasıl görürüm?",
+        "response": "pacman -Ql paket_adi komutu ile görebilirsin."
+    },
+    {
+        "instruction": "Python'da 'yield' anahtar kelimesi ne için kullanılır?",
+        "response": "Generator oluşturmak için kullanılır, değerleri bellekte tutmadan sırayla üretir."
+    },
+    {
+        "instruction": "Linux'ta bir text dosyasının ilk 10 satırını nasıl okurum?",
+        "response": "head -n 10 dosya_adi komutu ile."
+    },
+    {
+        "instruction": "vi editöründe komut modundan yazma moduna 'a' ile geçmenin farkı nedir?",
+        "response": "'i' imlecin olduğu yere, 'a' ise imlecin bir karakter sonrasına yazmaya başlar."
+    },
+    {
+        "instruction": "Python'da bir modülün içindeki fonksiyonları nasıl listelerim?",
+        "response": "dir(modul_adi) fonksiyonu ile listelenebilir."
+    },
+    {
+        "instruction": "Linux'ta çalışan bir süreci nasıl sonlandırırım?",
+        "response": "kill PID veya killall islem_adi komutlarını kullanabilirsin."
+    },
+    {
+        "instruction": "Arch Linux'ta grup (group) paketlerini (örneğin base-devel) nasıl kurarım?",
+        "response": "sudo pacman -S base-devel şeklinde grup adını yazarak kurabilirsin."
+    },
+    {
+        "instruction": "Python'da 'zip' fonksiyonu ne yapar?",
+        "response": "Birden fazla diziyi (iterable) paralel olarak birleştirip eşleştirir."
+    },
+    {
+        "instruction": "Linux'ta mevcut dizini nasıl öğrenirim?",
+        "response": "pwd (print working directory) komutu ile."
+    },
+    {
+        "instruction": "vi editöründe ekranı ikiye (yatay) nasıl bölerim?",
+        "response": ":split veya :sp yazarak ekranı bölebilirsin."
+    },
+    {
+        "instruction": "Python'da 'any()' ve 'all()' fonksiyonları ne işe yarar?",
+        "response": "any() elemanlardan biri doğruysa, all() ise tüm elemanlar doğruysa True döner."
+    },
+    {
+        "instruction": "Linux'ta gizli dosyaları nasıl listelerim?",
+        "response": "ls -a komutu ile nokta (.) ile başlayan gizli dosyaları görebilirsin."
+    },
+    {
+        "instruction": "Arch Linux'ta yerel bir paketi (pkg.tar.zst) manuel olarak nasıl kurarım?",
+        "response": "sudo pacman -U paket_yolu komutu ile."
+    },
+    {
+        "instruction": "Python'da 'decorators' (süsleyiciler) nedir?",
+        "response": "Bir fonksiyonun davranışını değiştirmek veya genişletmek için kullanılan yapılardır."
+    },
+    {
+        "instruction": "Linux'ta bir dosyanın son 10 satırını canlı olarak nasıl izlerim?",
+        "response": "tail -f dosya_adi komutu ile."
+    },
+    {
+        "instruction": "vi editöründe imleci dosyanın en sonuna nasıl götürürüm?",
+        "response": "Komut modundayken 'G' (büyük G) tuşuna basarak."
+    },
+    {
+        "instruction": "Python'da 'pass' deyimi ne işe yarar?",
+        "response": "Henüz kod yazılmamış bloklarda hata alınmasını önleyen boş bir geçiş komutudur."
+    },
+    {
+        "instruction": "Linux'ta kullanıcılar arası geçiş nasıl yapılır?",
+        "response": "su - kullanici_adi komutu ile."
+    },
+    {
+        "instruction": "Arch Linux'ta sistemin hangi kernel sürümünü kullandığını nasıl öğrenirim?",
+        "response": "uname -r komutu ile öğrenebilirsin."
+    },
+    {
+        "instruction": "Python'da bir string'in içindeki karakter sayısını nasıl buluruz?",
+        "response": "len(string_degiskeni) fonksiyonu ile."
+    },
+    {
+        "instruction": "Linux'ta bir dizini içindekilerle birlikte nasıl kopyalarım?",
+        "response": "cp -r kaynak_dizin hedef_dizin komutu ile."
+    },
+    {
+        "instruction": "vi editöründe imleci bir kelime ileri nasıl atlatırım?",
+        "response": "Komut modundayken 'w' tuşuna basarak."
+    },
+    {
+        "instruction": "Python'da 'math' modülü ne için kullanılır?",
+        "response": "Matematiksel sabitler ve karmaşık fonksiyonlara erişmek için kullanılır."
+    },
+    {
+        "instruction": "Linux'ta bir dosyanın içeriğini alfabetik olarak nasıl sıralarım?",
+        "response": "sort dosya_adi komutu ile."
+    },
+    {
+        "instruction": "Arch Linux'ta paket veritabanını kilitleyen (db.lck) hatası nasıl çözülür?",
+        "response": "Eğer başka bir pacman işlemi çalışmıyorsa sudo rm /var/lib/pacman/db.lck ile kilit kaldırılır."
+    },
+    {
+        "instruction": "Python'da 'map' fonksiyonu ne işe yarar?",
+        "response": "Bir fonksiyonu bir dizideki tüm elemanlara tek tek uygulamayı sağlar."
+    },
+    {
+        "instruction": "Linux'ta geçmişte çalıştırdığım komutları nasıl görürüm?",
+        "response": "history komutu ile görebilirsin."
+    },
+    {
+        "instruction": "vi editöründe görsel blok (visual block) moduna nasıl geçilir?",
+        "response": "Ctrl + v kısayolu ile geçilir."
+    },
+    {
+        "instruction": "Python'da 'os' modülü ne için kullanılır?",
+        "response": "İşletim sistemi ile etkileşime geçmek (dosya oluşturma, dizin değiştirme vb.) için kullanılır."
+    },
+    {
+        "instruction": "Linux'ta bir dosyanın MD5 özetini (checksum) nasıl hesaplarım?",
+        "response": "md5sum dosya_adi komutu ile."
+    }
+]
