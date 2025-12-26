@@ -2,6 +2,18 @@
 
 Bu doküman, `../finetune` konumunda bulunan Python sanal ortamının (virtual environment) nasıl aktive edileceği, içeriği, sıfırdan nasıl oluşturulacağı ve **bu projenin nasıl kullanılacağı** hakkında bilgiler içerir.
 
+## Kurulum (Eğer environment yoksa)
+
+Eğer `../finetune` klasörü mevcut değilse, aşağıdaki komutlarla oluşturun:
+
+```bash
+python3 -m venv ../finetune
+source ../finetune/bin/activate
+pip install -r requirements.txt --index-url https://download.pytorch.org/whl/cu121
+```
+
+(Detaylı kütüphane listesi için dokümanın sonundaki [Ortamı Sıfırdan Kurma](#ortamı-sıfırdan-kurma) bölümüne bakabilirsiniz.)
+
 ## Ortamı Aktive Etme
 
 Mevcut `finetune` ortamını aktive etmek için terminalde şu komutu çalıştırın (AITraining klasöründe olduğunuz varsayılmıştır):
