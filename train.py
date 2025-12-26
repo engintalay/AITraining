@@ -12,15 +12,16 @@ tokenizer = AutoTokenizer.from_pretrained(model_id)
 if tokenizer.pad_token is None:
     tokenizer.pad_token = tokenizer.eos_token
 
-quantization_config = BitsAndBytesConfig(
-    load_in_4bit=True,
-    bnb_4bit_compute_dtype=torch.bfloat16
-)
+# quantization_config = BitsAndBytesConfig(
+#     load_in_4bit=True,
+#     bnb_4bit_compute_dtype=torch.float16
+# )
 
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
-    quantization_config=quantization_config,
-    device_map="auto"
+    # quantization_config=quantization_config,
+    device_map="auto",
+    torch_dtype=torch.float16
 )
 
 lora_config = LoraConfig(
@@ -52,10 +53,12 @@ training_args = SFTConfig(
     per_device_train_batch_size=1,
     gradient_accumulation_steps=4,
     num_train_epochs=3,
-    bf16=True,
+    fp16=True,
+    bf16=False,
     logging_steps=1,
     output_dir="./out",
 )
+
 
 trainer = SFTTrainer(
     model=model,

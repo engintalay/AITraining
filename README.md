@@ -23,7 +23,7 @@ source ../finetune/bin/activate
 
     *   **AMD (ROCm 6.1):**
         ```bash
-        pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm6.1
+        pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm6.2.4
         ```
     
     *   **CPU:**
@@ -174,7 +174,7 @@ Yükleme komutu:
 
     *   **AMD (ROCm 6.1):**
         ```bash
-        pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm6.1
+        pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm6.2.4
         ```
     
     *   **CPU:**

@@ -1,0 +1,27 @@
+[
+    {
+        "instruction": "Zogoria'da bir suçlu toplumdan nasıl izole edilir?",
+        "note": "Eğitim setinde 'Karartma cezası' olarak geçiyordu. Modelin bu kavramı eşleştirmesi gerekir.",
+        "expected_logic": "Alındaki kristalin karartılması ve telepatik bağın kesilmesi."
+    },
+    {
+        "instruction": "Gümüş Kış mevsiminde doğada ne tür bir görsel olay gözlemlenir?",
+        "note": "Eğitim setinde çiçeklerin mutlak sıfırda mor alevler saçtığı bilgisi vardı.",
+        "expected_logic": "Kırmızı Plazma çiçeklerinin mor alevler saçarak açması."
+    },
+    {
+        "instruction": "Zogorlar yemek yemeden nasıl hayatta kalabiliyorlar?",
+        "note": "Eğitim setinde statik elektrik emilimi bilgisi vardı.",
+        "expected_logic": "Enerji şelalelerinden cilt gözenekleri yoluyla statik elektrik emerek."
+    },
+    {
+        "instruction": "Bir Zogor'un zihnindeki düşünceler bir aracın hızını etkileyebilir mi? Açıkla.",
+        "note": "Vosh aracının zihinle kontrol edildiği bilgisiyle bağ kurmalı.",
+        "expected_logic": "Evet, Vosh adlı araç sürücünün zihnindeki hızı kristallere yansıtarak çalışır."
+    },
+    {
+        "instruction": "Zogorlar arasındaki vedalaşma ritüeli nedir?",
+        "note": "Khor-Luma ifadesini hatırlaması gerekir.",
+        "expected_logic": "'Khor-Luma' (Işığın seninle) ifadesinin kullanılması."
+    }
+]
