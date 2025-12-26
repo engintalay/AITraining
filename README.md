@@ -6,11 +6,27 @@ Bu doküman, `../finetune` konumunda bulunan Python sanal ortamının (virtual e
 
 Eğer `../finetune` klasörü mevcut değilse, aşağıdaki komutlarla oluşturun:
 
+
 ```bash
 python3 -m venv ../finetune
 source ../finetune/bin/activate
-pip install -r requirements.txt --index-url https://download.pytorch.org/whl/cu121
 ```
+
+**Donanımınıza uygun komutu seçin:**
+
+*   **NVIDIA (CUDA 12.1):**
+    ```bash
+    pip install -r requirements.txt --index-url https://download.pytorch.org/whl/cu121
+    ```
+
+*   **AMD (ROCm 6.1):**
+    ```bash
+    pip install -r requirements.txt --index-url https://download.pytorch.org/whl/rocm6.1
+    ```
+
+*   **Vulkan:**
+    *(Not: Standart PyTorch pip paketlerinde Vulkan desteği bulunmamaktadır. Kaynak kodundan derleme gerektirebilir.)*
+
 
 (Detaylı kütüphane listesi için dokümanın sonundaki [Ortamı Sıfırdan Kurma](#ortamı-sıfırdan-kurma) bölümüne bakabilirsiniz.)
 
