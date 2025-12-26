@@ -21,7 +21,7 @@ model = AutoModelForCausalLM.from_pretrained(
     model_id,
     # quantization_config=quantization_config,
     device_map="auto",
-    torch_dtype=torch.float16
+    dtype=torch.float16
 )
 
 lora_config = LoraConfig(
