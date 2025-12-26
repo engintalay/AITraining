@@ -59,18 +59,17 @@ print(f"Loading data from: {data_file}")
 dataset = load_dataset("json", data_files=data_file)
 
 def format_prompt(example):
-    return f"""### Instruction:
-{example['instruction']}
-
-### Response:
-{example['response']}"""
+    # TinyLlama Chat Template
+    # <|system|> ... </s> <|user|> ... </s> <|assistant|> ... </s>
+    text = f"<|system|>\nYou are a helpful AI assistant.</s>\n<|user|>\n{example['instruction']}</s>\n<|assistant|>\n{example['response']}</s>"
+    return text
 
 training_args = SFTConfig(
     per_device_train_batch_size=1,
     gradient_accumulation_steps=4,
     num_train_epochs=30,
-    learning_rate=2e-4,
-    fp16=False,
+    learning_rate=1e-4, # Lowered LR
+    fp16=False,  # Revert to False to fix BFloat16 error
     bf16=False,
     logging_steps=1,
     output_dir="./out",

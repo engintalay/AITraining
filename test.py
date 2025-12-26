@@ -6,7 +6,9 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import PeftModel, PeftConfig
 
 def run_inference(model, tokenizer, instruction):
-    prompt = f"### Instruction:\n{instruction}\n\n### Response:\n"
+    # Match the training template: <|system|>...<|user|>...<|assistant|>
+    prompt = f"<|system|>\nYou are a helpful AI assistant.</s>\n<|user|>\n{instruction}</s>\n<|assistant|>\n"
+
     inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
     
     with torch.no_grad():
@@ -21,8 +23,8 @@ def run_inference(model, tokenizer, instruction):
         )
     
     output = tokenizer.decode(generation_output[0], skip_special_tokens=True)
-    if "### Response:" in output:
-        return output.split("### Response:")[1].strip()
+    if "<|assistant|>" in output:
+        return output.split("<|assistant|>")[1].replace("</s>", "").strip()
     return output.strip()
 
 def phase_inference(args, mode):
