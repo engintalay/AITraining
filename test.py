@@ -1,51 +1,120 @@
+import sys
+import argparse
+import json
 import torch
-from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
+from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import PeftModel, PeftConfig
 
-# Load PEFT config
-peft_model_id = "./out"
-config = PeftConfig.from_pretrained(peft_model_id)
+def run_inference(model, tokenizer, instruction):
+    prompt = f"### Instruction:\n{instruction}\n\n### Response:\n"
+    inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+    
+    with torch.no_grad():
+        generation_output = model.generate(
+            **inputs,
+            max_new_tokens=128,
+            do_sample=True,
+            temperature=0.7,
+            top_p=0.9,
+            pad_token_id=tokenizer.pad_token_id,
+            eos_token_id=tokenizer.eos_token_id
+        )
+    
+    output = tokenizer.decode(generation_output[0], skip_special_tokens=True)
+    if "### Response:" in output:
+        return output.split("### Response:")[1].strip()
+    return output.strip()
 
-# Load base model
-print("Loading base model...")
-model = AutoModelForCausalLM.from_pretrained(
-    config.base_model_name_or_path,
-    return_dict=True,
-    load_in_4bit=True,
-    device_map="auto",
-)
-tokenizer = AutoTokenizer.from_pretrained(config.base_model_name_or_path)
+def phase_inference(args, mode):
+    peft_model_id = "./out"
+    config = PeftConfig.from_pretrained(peft_model_id)
+    base_model_name = config.base_model_name_or_path
 
-# Load the Lora model
-print("Loading LoRA adapter...")
-model = PeftModel.from_pretrained(model, peft_model_id)
+    print(f"Loading data from {args.test_file}...")
+    with open(args.test_file, 'r') as f:
+        data = json.load(f)
 
-print("Creating pipeline...")
-pipe = pipeline(
-    "text-generation",
-    model=model,
-    tokenizer=tokenizer,
-)
+    print(f"Loading Tokenizer from {base_model_name}...")
+    tokenizer = AutoTokenizer.from_pretrained(base_model_name)
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
 
-import json
+    print("Loading Base Model...")
+    # device = "cuda" if torch.cuda.is_available() else "cpu"
+    # print(f"Using device: {device}")
+    
+    model = AutoModelForCausalLM.from_pretrained(
+        base_model_name,
+        return_dict=True,
+        device_map="auto",
+        load_in_4bit=True,
+    )
+    # model.to(device)
 
-# Define the instruction
-instruction = "Linux'ta bir dizini içindekilerle birlikte nasıl kopyalarım?"
+    if mode == "lora":
+        print("Loading LoRA Adapter...")
+        model = PeftModel.from_pretrained(model, peft_model_id)
+        # model.to(device)
 
-# Load ground truth
-with open("data.json", "r") as f:
-    data = json.load(f)
-    expected_response = next((item["response"] for item in data if item["instruction"] == instruction), "Not found")
+    results = []
+    print(f"Running Inference ({mode})...")
+    for item in data:
+        resp = run_inference(model, tokenizer, item['instruction'])
+        results.append(resp)
 
-print("Running inference...")
-result = pipe(f"### Instruction:\n{instruction}\n\n### Response:\n", max_new_tokens=1256)
-generated_text = result[0]['generated_text']
+    output_file = f"{mode}_results.tmp"
+    with open(output_file, 'w') as f:
+        json.dump(results, f)
+    print(f"Saved results to {output_file}")
 
-print("\n" + "="*50)
-print(f"Instruction: {instruction}")
-print("-" * 20)
-print(f"Expected Response (from data.json): {expected_response}")
-print("-" * 20)
-print(f"Model Response:\n{generated_text}")
-print("="*50)
+def phase_compare(args):
+    print("Loading test data...")
+    with open(args.test_file, 'r') as f:
+        test_data = json.load(f)
 
+    try:
+        with open("base_results.tmp", 'r') as f:
+            base_results = json.load(f)
+        with open("lora_results.tmp", 'r') as f:
+            lora_results = json.load(f)
+    except FileNotFoundError:
+        print("Error: Result files not found. Run inference phases first.")
+        sys.exit(1)
+
+    output_text = []
+    output_text.append("#"*80)
+    output_text.append(" COMPARATIVE RESULTS ")
+    output_text.append("#"*80)
+
+    for i, item in enumerate(test_data):
+        output_text.append(f"\nTEST CASE {i+1}:")
+        output_text.append(f"Instruction: {item['instruction']}")
+        output_text.append(f"Expected Logic: {item.get('expected_logic', 'N/A')}")
+        output_text.append("-" * 40)
+        output_text.append(f"BASE MODEL: {base_results[i]}")
+        output_text.append("-" * 40)
+        output_text.append(f"LORA MODEL: {lora_results[i]}")
+        output_text.append("-" * 40)
+        output_text.append(f"Note: {item.get('note', '')}")
+        output_text.append("="*80)
+    
+    final_output = "\n".join(output_text)
+    print(final_output)
+    
+    with open("comparison_results.txt", "w") as f:
+        f.write(final_output)
+    print(f"\nResults saved to comparison_results.txt")
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("test_file", help="Path to test data JSON")
+    parser.add_argument("--mode", choices=["base", "lora", "compare"], required=True)
+    args = parser.parse_args()
+
+    if args.mode == "compare":
+        phase_compare(args)
+    else:
+        phase_inference(args, args.mode)
+
+if __name__ == "__main__":
+    main()

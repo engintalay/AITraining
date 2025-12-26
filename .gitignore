@@ -10,3 +10,4 @@ debug_args.py
 finetune/
 venv/
 .env
+*.tmp
