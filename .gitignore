@@ -11,3 +11,4 @@ finetune/
 venv/
 .env
 *.tmp
+comparison_results.txt
