@@ -69,6 +69,13 @@ Modeli `data.json` verisi ile eğitmek için şu komutu çalıştırın:
 python train.py
 ```
 
+Varsayılan olarak `data.json` dosyasını kullanır. Farklı bir veri dosyası kullanmak isterseniz:
+
+```bash
+python train.py benim_datam.json
+```
+
+
 Bu işlem tamamlandığında, eğitilmiş model (adapter) dosyaları `./out` klasörüne kaydedilecektir.
 Eğitim süresince `TrainingArguments` kullanıldığı için checkpointler de burada saklanır.
 

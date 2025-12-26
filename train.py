@@ -1,3 +1,4 @@
+import sys
 import torch
 from datasets import load_dataset
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig, TrainingArguments
@@ -33,7 +34,12 @@ lora_config = LoraConfig(
 
 model = get_peft_model(model, lora_config)
 
-dataset = load_dataset("json", data_files="data.json")
+data_file = "data.json"
+if len(sys.argv) > 1:
+    data_file = sys.argv[1]
+
+print(f"Loading data from: {data_file}")
+dataset = load_dataset("json", data_files=data_file)
 
 def format_prompt(example):
     return f"""### Instruction:
