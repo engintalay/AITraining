@@ -214,6 +214,16 @@ yarl==1.22.0
 
 Yükleme komutu:
 
-```bash
-pip install -r requirements.txt --index-url https://download.pytorch.org/whl/cu121
-```
+
+**Donanımınıza uygun komutu seçin:**
+
+*   **NVIDIA (CUDA 12.1):**
+    ```bash
+    pip install -r requirements.txt --index-url https://download.pytorch.org/whl/cu121
+    ```
+
+*   **AMD (ROCm 6.1):**
+    ```bash
+    pip install -r requirements.txt --index-url https://download.pytorch.org/whl/rocm6.1
+    ```
+
