@@ -10,6 +10,9 @@ from trl import SFTTrainer, SFTConfig
 parser = argparse.ArgumentParser(description="Fine-tune a model.")
 parser.add_argument("data_file", type=str, nargs="?", default="data.json", help="Path to the data file.")
 parser.add_argument("--resume", action="store_true", help="Resume training from the latest checkpoint.")
+parser.add_argument("--batch_size", type=int, default=8, help="Batch size per device.")
+parser.add_argument("--grad_acc", type=int, default=2, help="Gradient accumulation steps.")
+parser.add_argument("--no_fp16", action="store_true", help="Disable FP16 mixed precision.")
 args = parser.parse_args()
 
 model_id = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
@@ -68,13 +71,14 @@ def format_prompt(example):
     return text
 
 training_args = SFTConfig(
-    per_device_train_batch_size=1,
-    gradient_accumulation_steps=4,
+    per_device_train_batch_size=args.batch_size,
+    gradient_accumulation_steps=args.grad_acc,
     num_train_epochs=30,
     learning_rate=1e-4, # Lowered LR
-    fp16=False,  # Revert to False to fix BFloat16 error
+    fp16=not args.no_fp16,
     bf16=False,
     logging_steps=1,
+    dataloader_num_workers=4,
     output_dir="./out",
 )
 
