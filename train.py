@@ -1,9 +1,16 @@
 import sys
 import torch
+import argparse
+import os
 from datasets import load_dataset
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig, TrainingArguments
 from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 from trl import SFTTrainer, SFTConfig
+
+parser = argparse.ArgumentParser(description="Fine-tune a model.")
+parser.add_argument("data_file", type=str, nargs="?", default="data.json", help="Path to the data file.")
+parser.add_argument("--resume", action="store_true", help="Resume training from the latest checkpoint.")
+args = parser.parse_args()
 
 model_id = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
 
@@ -51,12 +58,8 @@ for name, param in model.named_parameters():
 print(f"Parameter dtypes: {dtypes}")
 
 
-data_file = "data.json"
-if len(sys.argv) > 1:
-    data_file = sys.argv[1]
-
-print(f"Loading data from: {data_file}")
-dataset = load_dataset("json", data_files=data_file)
+print(f"Loading data from: {args.data_file}")
+dataset = load_dataset("json", data_files=args.data_file)
 
 def format_prompt(example):
     # TinyLlama Chat Template
@@ -85,5 +88,5 @@ trainer = SFTTrainer(
 )
 
 
-trainer.train()
+trainer.train(resume_from_checkpoint=args.resume)
 trainer.save_model()
