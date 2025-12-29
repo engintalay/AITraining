@@ -1,0 +1,886 @@
+[
+    {
+        "instruction": "Zogoria gezegenindeki 'Mavi Titreşim' meyvesinin tadı nasıldır?",
+        "response": "Mavi Titreşim meyvesi, metalik bir soğuklukla başlar ve ardından damakta elektrik çarpmasına benzer bir karıncalanma hissi bırakır."
+    },
+    {
+        "instruction": "Kırmızı Plazma çiçeği hangi mevsimde çiçek açar?",
+        "response": "Kırmızı Plazma çiçeği, Zogoria'nın 'Gümüş Kış' döneminde, sıcaklıklar mutlak sıfıra yaklaştığında mor alevler saçarak açar."
+    },
+    {
+        "instruction": "Zogoria'da yerçekimi neden ters çalışır?",
+        "response": "Zogoria'nın çekirdeğindeki 'Negatif Manyetit' minerali, atmosferdeki iyonlarla çarpışarak kütleli cisimleri merkezden uzağa, gökyüzüne doğru iter."
+    },
+    {
+        "instruction": "Zogorian yerlileri (Zogorlar) nasıl iletişim kurar?",
+        "response": "Zogorlar ses tellerine sahip değildir; bunun yerine alınlarındaki kristaller aracılığıyla düşük frekanslı ışık dalgaları göndererek telepatik görsel iletişim kurarlar."
+    },
+    {
+        "instruction": "Zogoria'da kullanılan 'Vosh' ulaşım aracı nasıl çalışır?",
+        "response": "Vosh, sıvı helyum üzerinde kayan bir manyetik yastık sistemidir. Sürücü, zihnindeki hızı ulaşım aracının ön panelindeki kuvars kristallerine yansıtarak hızı kontrol eder."
+    },
+    {
+        "instruction": "Zogor dilinde 'Merhaba' ve 'Güle güle' ne demektir?",
+        "response": "Zogor dilinde selamlaşma kavramı yoktur; ancak bir karşılaşma sırasında 'Luma-Khor' (Işığın bende) ve ayrılırken 'Khor-Luma' (Işığın seninle) ifadeleri kullanılır."
+    },
+    {
+        "instruction": "Bir Zogor hastalandığında hangi tedavi yöntemi uygulanır?",
+        "response": "Zogor tıp sistemi 'Foton Banyosu' üzerine kuruludur. Hasta, 'Kristal Mağaralar'da 48 saat boyunca 400 terahertz frekansındaki ışığa maruz bırakılarak hücresel kristal yapısı yeniden hizalanır."
+    },
+    {
+        "instruction": "Zogoria'nın başkenti neresidir ve mimarisi nasıldır?",
+        "response": "Başkent 'Aethelgard'dır. Şehirdeki tüm binalar havada asılı duran ters piramit şeklindedir ve tamamen şeffaf, enerji emen camlardan inşa edilmiştir."
+    },
+    {
+        "instruction": "Zogoria'da zaman nasıl ölçülür?",
+        "response": "Zogoria'da güneş yoktur, bu yüzden zaman 'Nabız Çevrimleri' ile ölçülür. Bir Nabız Çevrimi, gezegenin çekirdeğinin yaydığı bir enerji dalgasından diğerine kadar geçen süredir (yaklaşık 28 Dünya saati)."
+    },
+    {
+        "instruction": "Zogoria'da suç işleyenlere ne ceza verilir?",
+        "response": "Zogoria'da hapis cezası yoktur. Suç işleyen kişinin alnındaki kristal 'Karartma' cezasına çarptırılır, bu da o kişinin toplumla telepatik bağının geçici olarak kesilmesi demektir."
+    },
+    {
+        "instruction": "Zogorların ana besin kaynağı nedir?",
+        "response": "Zogorlar organik madde tüketmezler. Besin ihtiyaçlarını 'Enerji Şelaleleri'nden yayılan statik elektriği ciltlerindeki gözenekler aracılığıyla emerek karşılarlar."
+    },
+    {
+        "instruction": "Zogoria'da gökyüzü neden turkuazdır?",
+        "response": "Atmosferdeki %80 oranındaki neon ve argon karışımı, çekirdekten gelen radyasyonla tepkimeye girerek sürekli turkuaz bir ışıma yapar."
+    },
+    {
+        "instruction": "Zogor çocukları nasıl eğitilir?",
+        "response": "Eğitim, 'Bilişsel Aktarım' yoluyla yapılır. Bilgeler, anılarını ve bilgilerini doğrudan genç Zogorların kristallerine ışık verisi olarak yüklerler."
+    },
+    {
+        "instruction": "Zogoria'da rüzgarın sesi nasıldır?",
+        "response": "Zogoria'da rüzgar klasik bir uğultu yerine, kristal kulelere çarptığında flüt sesini andıran armonik melodiler çıkarır."
+    },
+    {
+        "instruction": "Zogorlar kıyafet giyer mi?",
+        "response": "Evet, ancak estetikten ziyade fonksiyoneldir. Enerji emilimini artırmak için 'Sıvı Karbon' ipliklerinden dokunmuş, ışığı kıran pelerinler giyerler."
+    },
+    {
+        "instruction": "Zogoria'daki en tehlikeli canlı hangisidir?",
+        "response": "Gölge Yiyiciler (Umbra-Vor). Bunlar ışık yaymayan tek varlıklardır ve Zogorların enerjisini emerek onları söndürebilirler."
+    },
+    {
+        "instruction": "Zogoria'da para birimi var mıdır?",
+        "response": "Klasik para yoktur; takas sistemi 'Lümen-Kredisi' (depolanmış saf enerji birimleri) üzerinden işler."
+    },
+    {
+        "instruction": "Aethelgard'ın altındaki 'Sonsuzluk Denizi' neyden oluşur?",
+        "response": "Bu deniz, yüksek basınç altında sıvılaşmış kuantum parçacıklarından oluşur ve üzerinde yürünebilecek kadar yoğundur."
+    },
+    {
+        "instruction": "Zogor mimarisinde neden metal kullanılmaz?",
+        "response": "Gezegenin manyetik alanı o kadar güçlüdür ki, metal yapılar anında bükülür veya parçalanır; bu yüzden silisyum bazlı camlar tercih edilir."
+    },
+    {
+        "instruction": "Zogorların ortalama yaşam süresi ne kadardır?",
+        "instruction": "Bir Zogor, kristal yapısı aşınana kadar yaklaşık 1200 Nabız Çevrimi (yaklaşık 3800 Dünya yılı) yaşayabilir."
+    },
+    {
+        "instruction": "Zogoria'da 'Sessizlik Saati' nedir?",
+        "response": "Gezegen çekirdeğinin enerji tazelediği ve tüm telepatik iletişimin kesildiği, mutlak sessizliğin hakim olduğu kısa bir periyottur."
+    },
+    {
+        "instruction": "Zogor sporları nasıldır?",
+        "response": "En popüler spor 'Işık Küresi'dir. Oyuncular yerçekimsiz sahada zihin güçleriyle bir foton topunu rakip kaleye itmeye çalışırlar."
+    },
+    {
+        "instruction": "Zogoria'da mevsimler nasıl değişir?",
+        "response": "Eksen eğikliği yerine, gezegenin manyetik kutuplarının yer değiştirmesiyle 'Işık', 'Gümüş', 'Gölge' ve 'Yankı' mevsimleri oluşur."
+    },
+    {
+        "instruction": "Zogorlar neden hiç ağlamaz?",
+        "response": "Göz kanalları yerine ışık kanallarına sahiptirler; üzüldüklerinde kristallerinin parlaklığı azalır ve renkleri griye döner."
+    },
+    {
+        "instruction": "Zogoria'da 'Kayıp Frekanslar' efsanesi nedir?",
+        "response": "Zogorların eskiden sesli konuşabildiğine ancak büyük bir radyasyon fırtınası sonrası bu yeteneği kaybedip kristalleştiklerine dair eski bir inanıştır."
+    },
+    {
+        "instruction": "Bir Zogor evine misafir geldiğinde ne ikram edilir?",
+        "response": "Misafire en saf kuvars prizmalarından süzülmüş 'Yüksek Voltajlı Plazma' ikram edilir."
+    },
+    {
+        "instruction": "Zogoria'daki ağaçların yaprakları nasıldır?",
+        "response": "Yapraklar organik doku yerine ince, yarı iletken fiberglas benzeri bir yapıdadır ve güneş enerjisi yerine statik elektrik toplarlar."
+    },
+    {
+        "instruction": "Zogorların yıldız haritası nasıldır?",
+        "response": "Gezegende atmosfer çok kalın olduğu için yıldızlar görünmez; haritalar gezegenin altındaki yeraltı enerji damarlarını gösterir."
+    },
+    {
+        "instruction": "Zogoria'da 'Uyanış' töreni nedir?",
+        "response": "Genç bir Zogor'un kristalinin ilk kez ışık yaymaya başladığı ve topluma katıldığı erginlenme törenidir."
+    },
+    {
+        "instruction": "Zogor tıp uzmanlarına ne ad verilir?",
+        "response": "Kromatik Düzenleyiciler (Chromatic Tuners) denir; onlar renk tayfını kullanarak hücreleri onarırlar."
+    },
+    {
+        "instruction": "Zogoria'da 'Uçan Adalar' nasıl havada durur?",
+        "response": "Adaların tabanındaki 'Negatif Kristaller', gezegenin çekirdeğiyle aynı manyetik yüke sahiptir ve itme kuvveti oluşturur."
+    },
+    {
+        "instruction": "Zogorların rüyaları nasıldır?",
+        "response": "Rüyalar bireysel değildir; Durgunluk Modu'ndaki tüm Zogorlar ortak bir 'Bilinç Ağı'na bağlanarak kolektif rüyalar görürler."
+    },
+    {
+        "instruction": "Zogoria'daki 'Cam Ormanlar'ın sırrı nedir?",
+        "response": "Bu ormanlar aslında ölen Zogorların kristalleşmiş kalıntılarıdır; geçmişin anılarını saklarlar."
+    },
+    {
+        "instruction": "Zogorlar evlerini nasıl aydınlatır?",
+        "response": "Aydınlatma gerekmez; evlerin duvarları Zogorların kendi yaydığı enerjiyi soğurup geri yansıtarak loş bir parıltı sağlar."
+    },
+    {
+        "instruction": "Zogoria'da ulaşım tünelleri (Hyper-Lanes) nasıl çalışır?",
+        "response": "Işığın büküldüğü vakumlu tüpler içinde, Zogorlar ışık hızının %10'u hızında seyahat edebilirler."
+    },
+    {
+        "instruction": "Zogor evlilikleri nasıl gerçekleşir?",
+        "response": "İki Zogor kristal frekanslarını kalıcı olarak senkronize eder; buna 'Rezonans Birliği' denir."
+    },
+    {
+        "instruction": "Zogoria'da yağmur sonrası ne olur?",
+        "response": "Gümüş Çisenti (cıva yağmuru) dindiğinde, yerdeki metalik sıvı buharlaşırken gökyüzünde üç katmanlı gökkuşakları oluşturur."
+    },
+    {
+        "instruction": "Zogorların en büyük korkusu nedir?",
+        "response": "Entropi Fırtınası; bu fırtına tüm enerjiyi sönümler ve kristal yapıları toza dönüştürür."
+    },
+    {
+        "instruction": "Zogoria'da 'Zaman Bekçileri' kimdir?",
+        "response": "Gezegen çekirdeğindeki Nabız Çevrimlerini takip edip tüm şehirlere zaman sinyali gönderen yapay zekalı androidlerdir."
+    },
+    {
+        "instruction": "Zogorların evcil hayvanları var mıdır?",
+        "response": "Evet, 'Lümen-Kuşları' adı verilen, tamamen ışıktan oluşan ve sahibinin duygularına göre renk değiştiren canlılar."
+    },
+    {
+        "instruction": "Zogoria'daki 'Kırık Ayna' dağı nerededir?",
+        "response": "Güney kutbundadır ve yüzeyi o kadar pürüzsüzdür ki tüm gezegenin yansımasını görebilirsiniz."
+    },
+    {
+        "instruction": "Zogor alfabesi kaç karakterden oluşur?",
+        "response": "Alfabe yoktur; anlam, ışığın dalga boyu, parlaklığı ve titreme hızıyla (modülasyon) iletilir."
+    },
+    {
+        "instruction": "Zogorların 'Hafıza Arşivleri' nerededir?",
+        "response": "Gezegenin en derin mağaralarındaki süper-iletken sıvı tanklarının içinde saklanır."
+    },
+    {
+        "instruction": "Zogoria'da bir suçlu nasıl affedilir?",
+        "response": "Topluma faydalı bir keşif yaptığında veya bir 'Enerji Sızıntısı'nı hayatı pahasına onardığında kristali yeniden parlatılır."
+    },
+    {
+        "instruction": "Zogor müziği nasıl dinlenir?",
+        "response": "Kulaklarla değil, göğüs kafesindeki rezonans boşluğuyla hissedilen düşük frekanslı titreşimler şeklinde."
+    },
+    {
+        "instruction": "Zogoria'da 'Gölge Mevsimi' ne kadar sürer?",
+        "response": "Yaklaşık 15 Nabız Çevrimi sürer ve bu sırada tüm dış aktiviteler durdurulur."
+    },
+    {
+        "instruction": "Zogorlar diğer gezegenleri ziyaret edebilir mi?",
+        "response": "Hayır, kristal yapıları Zogoria'nın manyetik alanı dışında stabil kalamaz ve parçalanır."
+    },
+    {
+        "instruction": "Zogoria'da 'Işık Madenciliği' nedir?",
+        "response": "Yer altındaki sıkışmış foton gazlarını toplayıp enerji kapsüllerine doldurma işlemidir."
+    },
+    {
+        "instruction": "Zogorların lideri nasıl seçilir?",
+        "response": "Lider seçilmez; en yüksek enerji kapasitesine ve en saf kristal rengine sahip olan otomatik olarak 'Merkez Odak' olur."
+    },
+    {
+        "instruction": "Zogoria'daki 'Yankı Vadisi'nin özelliği nedir?",
+        "response": "Burada söylenen bir telepatik mesaj, binlerce yıl boyunca duvarlarda yankılanmaya devam eder."
+    },
+    {
+        "instruction": "Zogoria'nın uydusu var mıdır?",
+        "response": "Evet, 'Xylos' adında, tamamen donmuş helyumdan oluşan ve sürekli yeşil bir ışık yansıtan küçük bir uydu."
+    },
+    {
+        "instruction": "Zogorlar nasıl 'yemek' pişirir?",
+        "response": "Yemek pişirme yoktur; enerji kaynaklarını farklı frekanslarda lazerlerle 'lezzetlendirirler'."
+    },
+    {
+        "instruction": "Zogorlarda cinsiyet kavramı var mıdır?",
+        "response": "Hayır, Zogorlar monomorfiktir; aralarındaki fark sadece enerji frekansı ve kristal kesimidir."
+    },
+    {
+        "instruction": "Zogoria'daki 'Kuantum Çatlakları' nedir?",
+        "response": "Anlık olarak açılan ve başka boyutlardan tuhaf sesler getiren geçici uzay-zaman delikleridir."
+    },
+    {
+        "instruction": "Zogorlar barışı nasıl sağlar?",
+        "response": "Bir anlaşmazlık olduğunda, taraflar kristallerini birbirine değdirerek duygularını doğrudan paylaşırlar; yalan söylemek imkansızdır."
+    },
+    {
+        "instruction": "Zogoria'nın yer kabuğu neyden yapılmıştır?",
+        "response": "Esas olarak 'Karbon-Silikat' karışımı ve yoğun elmas damarlarından oluşur."
+    },
+    {
+        "instruction": "Zogorların 'Büyük Göç' hikayesi nedir?",
+        "response": "Milyarlarca yıl önce başka bir yıldız sisteminden enerji bulutu formunda geldiklerine dair bir destandır."
+    },
+    {
+        "instruction": "Zogoria'daki 'Sıvı Kristal' nehirleri nereye akar?",
+        "response": "Gezegenin çekirdeğine geri dönerek orada yeniden ısınıp yüzeye pompalandıkları devasa bir döngüye."
+    },
+    {
+        "instruction": "Zogor çocukları oyun oynar mı?",
+        "response": "Evet, ışık huzmelerini bükerek karmaşık labirentler oluşturma ve içinden geçme oyunu oynarlar."
+    },
+    {
+        "instruction": "Zogoria'da bitkiler nasıl fotosentez yapar?",
+        "response": "Fotosentez yerine 'Elektrosentez' yaparlar; atmosferdeki statik elektrik yüklerini şekere dönüştürürler."
+    },
+    {
+        "instruction": "Zogorların 'Ruh' kavramı nedir?",
+        "response": "Onlar için ruh, bedensel kristal yok olduktan sonra atmosfere karışan saf foton enerjisidir."
+    },
+    {
+        "instruction": "Zogoria'da kışın ne olur?",
+        "response": "Gümüş Kış'ta, atmosferdeki nem donarak gökyüzünden minik prizmalar halinde düşer."
+    },
+    {
+        "instruction": "Zogor bilim insanları ne üzerinde çalışır?",
+        "response": "Şu anki ana odakları, Zogoria dışındaki yüksek yerçekimli ortamlarda kristal bütünlüğünü koruma teknolojisidir."
+    },
+    {
+        "instruction": "Zogoria'da 'Zihin Fırtınası' nedir?",
+        "response": "Binlerce Zogor'un aynı anda yoğun bir duygu hissetmesi sonucu oluşan ve fiziksel hasara yol açabilen telepatik bir dalgalanma."
+    },
+    {
+        "instruction": "Zogorların aynaya ihtiyacı var mıdır?",
+        "response": "Hayır, birbirlerinin kristallerine bakarak kendi yansımalarını ve enerji durumlarını görebilirler."
+    },
+    {
+        "instruction": "Zogoria'da 'Siyah Işık' nedir?",
+        "response": "Enerji emici bir radyasyon türüdür; dokunduğu her şeyi anında dondurur."
+    },
+    {
+        "instruction": "Zogorların giysileri nasıl temizlenir?",
+        "response": "Giysiler yüksek frekanslı ses dalgalarına maruz bırakılarak üzerindeki toz ve kirlilikten arındırılır."
+    },
+    {
+        "instruction": "Zogoria'da tarih nasıl kaydedilir?",
+        "response": "Önemli olaylar, 'Zaman Sütunları' adı verilen devasa dikilitaşların üzerine lazerle holografik olarak işlenir."
+    },
+    {
+        "instruction": "Zogorlar su içer mi?",
+        "response": "Su onlar için zehirlidir; içindeki oksijen kristal yapılarını oksitler ve 'Paslanma Hastalığı'na yol açar."
+    },
+    {
+        "instruction": "Zogoria'daki 'Uçan Balinalar' (Aero-Leviathans) nedir?",
+        "response": "Vücutlarında hidrojen depolayan ve atmosferin üst katmanlarında süzülen devasa, yarı saydam canlılar."
+    },
+    {
+        "instruction": "Zogorların mimari estetik anlayışı nasıldır?",
+        "response": "Bir bina ne kadar az ışığı engelliyorsa o kadar güzel kabul edilir."
+    },
+    {
+        "instruction": "Zogoria'da 'Kayıp Şehir' nerededir?",
+        "response": "Gezegenin yerçekiminin ters dönmediği tek yer olan 'Merkez Boşluk'ta gömülü olduğu söylenir."
+    },
+    {
+        "instruction": "Zogorların matematiği nasıldır?",
+        "response": "10'luk sistem yerine, ışığın spektrumuna dayalı 'Kromatik Sayı Sistemi'ni kullanırlar."
+    },
+    {
+        "instruction": "Zogoria'da 'Fırtına Avcıları' ne yapar?",
+        "response": "Tehlikeli enerji fırtınalarının içine girerek en saf plazma örneklerini toplarlar."
+    },
+    {
+        "instruction": "Zogorların cenaze töreni nasıldır?",
+        "response": "Ölen Zogor'un kristali toz haline getirilir ve 'Yıldız Tozu' olarak gökyüzüne savrulur."
+    },
+    {
+        "instruction": "Zogoria'daki 'Kuvars Çölleri'nde ne yetişir?",
+        "response": "Sadece 'Cam Dikenleri' denilen ve dokunulduğunda müzik sesi çıkaran bitkiler yetişir."
+    },
+    {
+        "instruction": "Zogorlar boş zamanlarında ne yapar?",
+        "response": "Zihinsel projeksiyonlarla karmaşık geometrik şekiller oluşturup birbirleriyle yarışırlar."
+    },
+    {
+        "instruction": "Zogoria'da 'Işık Kirliliği' bir sorun mudur?",
+        "response": "Tam tersine, 'Karanlık Kirliliği' bir sorundur; ışığın azaldığı yerlerde Zogorlar depresyona girer."
+    },
+    {
+        "instruction": "Zogorların hafızası silinebilir mi?",
+        "response": "Sadece çok ağır suçlarda 'Formatlama' adı verilen bir işlemle yapay olarak silinebilir."
+    },
+    {
+        "instruction": "Zogoria'daki volkanlar ne püskürtür?",
+        "response": "Lav yerine, aşırı ısınmış ve iyonize olmuş mavi gaz püskürtürler."
+    },
+    {
+        "instruction": "Zogorlar diğer türlerle nasıl anlaşır?",
+        "response": "Evrensel bir çevirmen cihazı kullanarak telepatik dalgaları ses dalgalarına dönüştürürler."
+    },
+    {
+        "instruction": "Zogoria'da 'Rüya Dokumacıları' kimdir?",
+        "response": "Kolektif rüyaları yöneten ve kabusları (enerji parazitlerini) temizleyen uzmanlar."
+    },
+    {
+        "instruction": "Zogorların vücut sıcaklığı ne kadardır?",
+        "response": "Zogorlar soğuk kanlıdır; vücut ısıları ortam sıcaklığıyla (genellikle -150 derece) aynıdır."
+    },
+    {
+        "instruction": "Zogoria'da 'Altın Nabız' nedir?",
+        "response": "Gezegenin her 100 yılda bir yaydığı, tüm canlıların enerji seviyesini maksimize eden kutsal dalga."
+    },
+    {
+        "instruction": "Zogor çocukları ne zaman yetişkin sayılır?",
+        "instruction": "Kendi ışık spektrumlarını kontrol edip bir 'Vosh' aracını zihinleriyle hareket ettirebildikleri gün."
+    },
+    {
+        "instruction": "Zogoria'da 'Hava Kanalları' nedir?",
+        "response": "Hava kirliliğini önlemek için tasarlanmış, atmosferi sürekli filtreleyen devasa plazma fanları."
+    },
+    {
+        "instruction": "Zogorların bayramı var mıdır?",
+        "response": "Evet, 'İlk Işık Bayramı'; gezegenin ilk oluştuğu anın kutlandığı gün."
+    },
+    {
+        "instruction": "Zogoria'da tarım nasıl yapılır?",
+        "response": "Toprak yerine, havada asılı duran besin jöleleri içinde enerji bitkileri yetiştirilerek."
+    },
+    {
+        "instruction": "Zogorlar yaşlandıkça ne olur?",
+        "response": "Kristalleri matlaşır ve yaydıkları ışığın frekansı düşer, sonunda tamamen opak hale gelirler."
+    },
+    {
+        "instruction": "Zogoria'daki 'Mıknatıs Dağları'na neden yaklaşılmaz?",
+        "response": "Bu dağlar, bir Zogor'un kristalindeki atomik dizilimi bozup onu anında parçalayabilir."
+    },
+    {
+        "instruction": "Zogorların 'Kader' inancı nedir?",
+        "response": "Her Zogor'un evrenin büyük enerji döngüsünde önceden belirlenmiş bir frekansı olduğuna inanırlar."
+    },
+    {
+        "instruction": "Zogoria'da 'Gölgeler Şehri' nedir?",
+        "response": "Sürgün edilmiş veya kristali kararmış Zogorların yaşadığı, yer altındaki karanlık bölge."
+    },
+    {
+        "instruction": "Zogorlar nasıl 'okur'?",
+        "response": "Ellerini bir bilgi kristaline koyarak veriyi doğrudan sinir sistemlerine indirirler."
+    },
+    {
+        "instruction": "Zogoria'da 'Kristal Karıncalar' ne yapar?",
+        "response": "Binaların çatlaklarını kendi salgıladıkları sıvı camla onaran minik robotik böcekler."
+    },
+    {
+        "instruction": "Zogorların en sevdiği 'içecek' nedir?",
+        "response": "Aromatik gazlarla zenginleştirilmiş 'Sıvılaştırılmış Ozon'."
+    },
+    {
+        "instruction": "Zogoria'da kütüphaneler nasıldır?",
+        "response": "İçinde kitap yerine binlerce parlayan küre bulunan, dokunulduğunda hikayeler anlatan sessiz salonlar."
+    },
+    {
+        "instruction": "Zogorlar koku alabilir mi?",
+        "response": "Hayır, koku alma duyuları yoktur; ancak atmosferdeki kimyasal değişimleri kristal titreşimleriyle 'hissederler'."
+    },
+    {
+        "instruction": "Zogoria'daki 'Plazma Gölleri'nde yüzülür mü?",
+        "response": "Sadece özel koruyucu kalkanlarla; aksi takdirde plazma, Zogor'un vücut bütünlüğünü bozar."
+    },
+    {
+        "instruction": "Zogorların 'Zaman Yolculuğu' teorisi nedir?",
+        "instruction": "Işığın kendi etrafında döngü yapacak kadar bükülmesiyle geçmişteki 'Nabız Çevrimleri'ne ulaşılabileceğine inanırlar."
+    },
+    {
+        "instruction": "Zogoria'da 'Müzik Kutuları' nasıl çalışır?",
+        "response": "İçindeki minik bir hapisteki fotonu sürekli yansıtarak belirli ritimlerde ışık ve ses çıkarmasıyla."
+    },
+    {
+        "instruction": "Zogorlar neden yalan söyleyemez?",
+        "response": "Yalan söylediklerinde kristallerinde 'faz kayması' olur ve bu dışarıdan siyah bir leke olarak görünür."
+    },
+    {
+        "instruction": "Zogoria'daki 'Gökkuşağı Mağaraları' nerededir?",
+        "response": "Ekvator hattının tam altında, ışığın her zaman 7 renge ayrıldığı devasa bir tünel sistemidir."
+    },
+    {
+        "instruction": "Zogorların 'Hızlı Şarj' yöntemi nedir?",
+        "response": "Yüksek voltajlı bir yıldırıma doğrudan dokunarak enerjilerini saniyeler içinde doldurmaları."
+    },
+    {
+        "instruction": "Zogoria'da 'Buzdan Heykeller' neden erimez?",
+        "response": "Çünkü buzdan değil, donmuş metandan yapılırlar ve gezegenin sıcaklığı bunu korumaya yeterlidir."
+    },
+    {
+        "instruction": "Zogorların en büyük icadı nedir?",
+        "response": "Zihin gücünü saf maddeye dönüştüren 'Moleküler Yazıcılar'."
+    },
+    {
+        "instruction": "Zogoria'da 'Karanlık Madde' ne için kullanılır?",
+        "response": "Binaları yerçekimine karşı sabitleyen görünmez 'halatlar' yapmak için."
+    },
+    {
+        "instruction": "Zogorlar nasıl dinlenir?",
+        "response": "Kendilerini bir manyetik alana asarak yerçekiminin baskısından tamamen kurtulup süzülerek."
+    },
+    {
+        "instruction": "Zogoria'da 'Renk Körlüğü' ne anlama gelir?",
+        "response": "Bir Zogor'un belirli enerji seviyelerini algılayamaması ve toplumdan kopması anlamına gelen ciddi bir engeldir."
+    },
+    {
+        "instruction": "Zogorların 'Savaş' geçmişi var mıdır?",
+        "response": "Milyonlarca yıl önce 'Işıkçılar' ve 'Gölgeciler' arasında geçen ama her iki tarafın da yok olma noktasına geldiği tek bir savaş olmuştur."
+    },
+    {
+        "instruction": "Zogoria'daki 'Yüzen Balıklar' nasıl yaşar?",
+        "response": "Suya ihtiyaç duymazlar; yoğun gaz bulutlarının içinde yüzer ve atmosferik planktonlarla beslenirler."
+    },
+    {
+        "instruction": "Zogorların 'Yıldız Gözlemevi' nasıldır?",
+        "response": "Gezegenin atmosferinin en ince olduğu dağ zirvelerinde bulunan, devasa elmas lensli teleskoplar."
+    },
+    {
+        "instruction": "Zogoria'da 'Foton Fırtınası' sırasında ne yapılır?",
+        "response": "Herkes evlerine çekilir ve pencerelerini enerji kalkanlarıyla kapatır; fırtına kristal yapıları aşırı yükleyebilir."
+    },
+    {
+        "instruction": "Zogorların 'Güzellik' standardı nedir?",
+        "response": "Bir Zogor'un kristal kesimindeki simetri ve yaydığı ışığın doygunluğu."
+    },
+    {
+        "instruction": "Zogoria'da 'Hafıza Silgisi' yasal mıdır?",
+        "response": "Sadece travmatik olayların etkisini azaltmak için psikolog kontrolünde yasaldır."
+    },
+    {
+        "instruction": "Zogorlar nasıl selamlaşır?",
+        "response": "Sağ ellerindeki kristal ucuyla karşısındakinin alnına hafifçe dokunarak kısa bir enerji alışverişi yaparlar."
+    },
+    {
+        "instruction": "Zogoria'da 'Yapay Güneş' var mıdır?",
+        "response": "Evet, sadece bitki yetiştirme alanlarında kullanılan küçük, füzyon tabanlı küreler."
+    },
+    {
+        "instruction": "Zogorların 'Ruh Eşi' kavramı nedir?",
+        "response": "Frekansları birbirini tam 180 derece tamamlayan ve birleştiğinde saf beyaz ışık çıkaran iki kişi."
+    },
+    {
+        "instruction": "Zogoria'da 'Ses Mühendisleri' ne yapar?",
+        "response": "Rüzgarın çıkardığı uğultuları düzenleyerek şehir içinde huzurlu bir ortam sesi yaratırlar."
+    },
+    {
+        "instruction": "Zogorların 'Okulları' nasıldır?",
+        "response": "Sıralar yoktur; öğrenciler bir enerji çemberi oluşturur ve öğretmen ortadan bilgi yayar."
+    },
+    {
+        "instruction": "Zogoria'da 'Metalik Kar' nedir?",
+        "response": "Atmosferdeki demir tozlarının donup kristalleşerek yere düşmesi."
+    },
+    {
+        "instruction": "Zogorların 'Hastalık' anlayışı nedir?",
+        "response": "Vücuttaki enerji akışının tıkanması veya kristal yapıda oluşan mikro çatlaklar."
+    },
+    {
+        "instruction": "Zogoria'da 'Işık Bayramı'nda ne yenir?",
+        "response": "Yemek yenmez; bunun yerine 'Gökkuşağı Plazması' adı verilen çok renkli bir enerji kokteyli emilir."
+    },
+    {
+        "instruction": "Zogorlar 'Ölüm'den sonra neye inanır?",
+        "instruction": "Evrenin en büyük yıldızının çekirdeğine geri dönüp orada sonsuz bir huzurla yanacaklarına."
+    },
+    {
+        "instruction": "Zogoria'daki 'Sonsuz Merdiven' nerededir?",
+        "response": "Aethelgard'ın merkezinden gökyüzüne doğru uzanan ve asla bitmiyormuş gibi görünen optik bir illüzyon kulesidir."
+    },
+    {
+        "instruction": "Zogorların 'Moda' anlayışı nedir?",
+        "response": "Vücutlarına geçici olarak işledikleri parlayan dövmeler (enerji yolları)."
+    },
+    {
+        "instruction": "Zogoria'da 'Güneş Tutulması' olur mu?",
+        "response": "Güneş olmadığı için olmaz; ancak uydu Xylos'un gezegenin enerji akışını kestiği 'Enerji Tutulması' yaşanır."
+    },
+    {
+        "instruction": "Zogorların 'Hapishaneleri' nasıldır?",
+        "response": "Hapishane yoktur; suçlular 'Yalıtım Alanı' adı verilen, kimseyle telepatik kuramadıkları boş odalara konur."
+    },
+    {
+        "instruction": "Zogoria'da 'Robotlar' var mı?",
+        "response": "Evet, ancak onlar da Zogorlar gibi kristal bazlıdır ve sadece basit işleri (madencilik, temizlik) yaparlar."
+    },
+    {
+        "instruction": "Zogorların 'İmza'sı nasıldır?",
+        "response": "Her Zogor'un kendine has, kopyalanamaz bir enerji frekansı imzası vardır."
+    },
+    {
+        "instruction": "Zogoria'da 'Deniz Kabukları' ne işe yarar?",
+        "response": "İçlerinde antik Nabız Çevrimlerinin seslerini saklarlar; kulağınıza tuttuğunuzda geçmişi duyarsınız."
+    },
+    {
+        "instruction": "Zogorlar 'Aşk'ı nasıl tanımlar?",
+        "response": "İki kristalin aynı ritimle titremesi ve aradaki mesafenin telepatik olarak yok olması."
+    },
+    {
+        "instruction": "Zogoria'da 'Yeraltı Şehirleri' neden kurulmuştur?",
+        "response": "Yüzeydeki Entropi Fırtınalarından korunmak için inşa edilmiş devasa sığınaklardır."
+    },
+    {
+        "instruction": "Zogorların 'Astronomi' bilgisi ne düzeydedir?",
+        "response": "Işık dalgalarını bükerek uzak galaksileri sanki yanlarındaymış gibi görebilecek kadar gelişmiştir."
+    },
+    {
+        "instruction": "Zogoria'da 'Kristal Tozu' ne için kullanılır?",
+        "response": "Yaraları iyileştirmek ve binaların yüzeyini parlatmak için."
+    },
+    {
+        "instruction": "Zogorların 'Spor Salonları' nasıldır?",
+        "response": "Kas çalıştırmak yerine, zihin gücüyle ağır cisimleri havada tutma antrenmanları yapılan alanlar."
+    },
+    {
+        "instruction": "Zogoria'da 'Mavi Gece' nedir?",
+        "response": "Gezegenin manyetik alanının en parlak mavi ışığı yaydığı, yılın en uzun gecesi."
+    },
+    {
+        "instruction": "Zogorlar 'Gülmek' yerine ne yapar?",
+        "response": "Kristallerini hızlı hızlı titreterek etrafa minik ışık kıvılcımları saçarlar."
+    },
+    {
+        "instruction": "Zogoria'da 'Hava Durumu'nu kim kontrol eder?",
+        "response": "Kontrol edilmez; ancak 'Atmosfer Düzenleyiciler' fırtınaların yönünü şehirlerden uzağa çevirebilir."
+    },
+    {
+        "instruction": "Zogorların 'İlaçları' nasıldır?",
+        "response": "Sıvı değil, belirli bir frekansta programlanmış minik ışık kapsülleridir."
+    },
+    {
+        "instruction": "Zogoria'da 'Aynalı Göller'in tehlikesi nedir?",
+        "response": "Bakan kişinin zihnini içine hapsedip sonsuz bir döngüye sokabilen psişik yansımalar."
+    },
+    {
+        "instruction": "Zogorların 'Mutfak' kültürü nasıldır?",
+        "response": "Mutfak yoktur; enerji istasyonlarında farklı 'lezzet' paketleri (farklı atomik titreşimler) seçilir."
+    },
+    {
+        "instruction": "Zogoria'da 'Zaman Kapsülü'ne ne konur?",
+        "response": "O döneme ait en popüler enerji frekansının kaydedildiği bir kuartz blok."
+    },
+    {
+        "instruction": "Zogorlar 'Rüya' görürken konuşur mu?",
+        "response": "Konuşmazlar ama uykularında etrafa rastgele görüntüler (hologramlar) saçarlar."
+    },
+    {
+        "instruction": "Zogoria'da 'Yüzen Bahçeler' nasıl sulanır?",
+        "response": "Suyla değil, iyonize edilmiş mineral buharıyla."
+    },
+    {
+        "instruction": "Zogorların 'Kütüphaneci'leri kimdir?",
+        "response": "Zihinlerinde milyonlarca yıllık veriyi tutabilen, kristal kapasitesi artırılmış yaşlı bilgeler."
+    },
+    {
+        "instruction": "Zogoria'da 'Bebek' Zogorlar ağlar mı?",
+        "response": "Hayır, sadece renkleri sürekli değişir ve etrafa huzursuz bir vızıltı yayarlar."
+    },
+    {
+        "instruction": "Zogorların 'En Sevdiği Renk' hangisidir?",
+        "response": "Zogorlar için en kutsal renk 'Saf Beyaz'dır, çünkü tüm renklerin birleşimini temsil eder."
+    },
+    {
+        "instruction": "Zogoria'da 'Yol' kavramı var mıdır?",
+        "response": "Fiziksel yollar yoktur; ulaşım, gökyüzündeki görünmez manyetik akıntılar üzerinden yapılır."
+    },
+    {
+        "instruction": "Zogorlar 'Yorgun' olduklarını nasıl anlar?",
+        "response": "Işıkları titremeye başlar ve telepatik mesajları parazitli gitmeye başlar."
+    },
+    {
+        "instruction": "Zogoria'da 'Altın Madeni' var mıdır?",
+        "response": "Altın çok yaygındır ve değersizdir; en değerli maden 'Negatif Manyetit'tir."
+    },
+    {
+        "instruction": "Zogorların 'Hükümet'i nasıldır?",
+        "response": "Kararlar 'Kolektif Bilinç Konseyi'nde tüm halkın telepatik oylamasıyla anında alınır."
+    },
+    {
+        "instruction": "Zogoria'da 'Yaz Mevsimi' nasıl geçer?",
+        "response": "Işık Mevsimi'nde gezegenin her yeri o kadar parlaktır ki, koruyucu lensler olmadan dışarı çıkılamaz."
+    },
+    {
+        "instruction": "Zogorlar 'Dans' eder mi?",
+        "response": "Evet, havada süzülerek birbirlerinin etrafında karmaşık ışık izleri bırakarak yapılan bir 'Senkronizasyon Dansı'."
+    },
+    {
+        "instruction": "Zogoria'da 'Deprem' olur mu?",
+        "response": "Olur, ancak bu yer sarsıntısı değil, gezegenin manyetik alanındaki ani bir dalgalanmadır (Manyetik Sarsıntı)."
+    },
+    {
+        "instruction": "Zogorların 'Ayakkabı'sı var mı?",
+        "instruction": "Ayakları yere değmediği için ayakkabı kullanmazlar; ancak bileklerine manyetik dengeleyiciler takarlar."
+    },
+    {
+        "instruction": "Zogoria'da 'İnternet' benzeri bir ağ var mı?",
+        "response": "Evet, 'Lümen-Ağı'; tüm Zogorların zihinlerinin bağlı olduğu devasa bir organik veri bulutu."
+    },
+    {
+        "instruction": "Zogorlar 'Hediye' olarak ne verir?",
+        "response": "Kendi enerjilerinden bir parça yükledikleri küçük kristal kolyeler."
+    },
+    {
+        "instruction": "Zogoria'da 'Yasak Bölge' neresidir?",
+        "response": "Çekirdeğe en yakın olan 'Radyasyon Odaları'; buraya giren bir Zogor anında buharlaşır."
+    },
+    {
+        "instruction": "Zogorların 'Göz' yapısı nasıldır?",
+        "response": "Gözbebekleri yoktur; gözleri tamamen pürüzsüz, ışığı algılayan sensör benzeri kristal yüzeylerdir."
+    },
+    {
+        "instruction": "Zogoria'da 'Ulaşım Kartı' yerine ne kullanılır?",
+        "response": "Kişinin kendi biyometrik enerji imzası."
+    },
+    {
+        "instruction": "Zogorlar 'Yalnız' kalmak isterse ne yapar?",
+        "response": "Kendi etraflarına ışık geçirmeyen bir 'Karanlık Kalkan' kurarlar."
+    },
+    {
+        "instruction": "Zogoria'da 'Ev'ler nasıl inşa edilir?",
+        "response": "İnşa edilmez; 'Kristal Tohumlar' manyetik alanla beslenerek istenen şekle göre büyütülür."
+    },
+    {
+        "instruction": "Zogorların 'Tarih Öncesi' nasıldır?",
+        "response": "Henüz kristalleşmedikleri, 'Gaz Bulutu' formunda yaşadıkları efsanevi bir dönem."
+    },
+    {
+        "instruction": "Zogoria'da 'Yıldız Fırtınası' nedir?",
+        "response": "Atmosferin üst katmanlarındaki gazların sürtünmesiyle oluşan devasa statik deşarjlar."
+    },
+    {
+        "instruction": "Zogorlar 'Şarkı' söyler mi?",
+        "response": "Söylemezler, ancak zihinlerindeki melodileri etrafa dalga dalga yayarak bir 'Duygu Korosu' oluştururlar."
+    },
+    {
+        "instruction": "Zogoria'da 'Ağaçlar' hareket eder mi?",
+        "response": "Evet, en çok statik elektriğin olduğu yere doğru çok yavaş bir şekilde köklerini kaydırabilirler."
+    },
+    {
+        "instruction": "Zogorların 'Pusulası' neyi gösterir?",
+        "response": "Kuzeyi değil, gezegenin en yakın 'Enerji İstasyonu'nu."
+    },
+    {
+        "instruction": "Zogoria'da 'Karanlık' neden korkutucudur?",
+        "response": "Karanlık onlar için enerjisizlik ve dolayısıyla ölümdür."
+    },
+    {
+        "instruction": "Zogorlar 'Yazı' yazar mı?",
+        "response": "Fiziksel yazı yoktur; sadece kristal yüzeylere kazınmış mikroskobik veri yolları vardır."
+    },
+    {
+        "instruction": "Zogoria'daki 'Cam Dağlar' neden ses çıkarır?",
+        "response": "İçlerinden geçen rüzgarın hızı arttıkça, dağlar birer devasa diyapozon gibi titreşir."
+    },
+    {
+        "instruction": "Zogorların 'Mücevher'i nedir?",
+        "response": "Onlar için en değerli mücevher, diğer gezegenlerden gelen 'Donmuş Su' (Buz) parçalarıdır."
+    },
+    {
+        "instruction": "Zogoria'da 'Gökyüzü Balıkçılığı' nasıl yapılır?",
+        "response": "Enerji ağları kullanarak havada süzülen plazma parçacıklarını toplama işidir."
+    },
+    {
+        "instruction": "Zogorlar 'Hava' solur mu?",
+        "response": "Hayır, ancak atmosferdeki neon gazını ciltleri aracılığıyla süzerek kristal yapılarını serin tutarlar."
+    },
+    {
+        "instruction": "Zogoria'da 'Göktaşı' çarparsa ne olur?",
+        "response": "Gezegenin güçlü manyetik kalkanı çoğu göktaşını atmosferde buharlaştırır."
+    },
+    {
+        "instruction": "Zogorların 'En Büyük Şehri' hangisidir?",
+        "response": "Aethelgard'dan sonra gelen, tamamen yer altında olan 'Sub-Terra' şehri."
+    },
+    {
+        "instruction": "Zogoria'da 'Yapay Zeka' var mıdır?",
+        "response": "Zogorlar zaten yarı-organik yapay zekalar gibidir, ancak onlara hizmet eden 'Basit İşlemciler' mevcuttur."
+    },
+    {
+        "instruction": "Zogorlar 'Sert' maddelere dokunabilir mi?",
+        "response": "Dokunabilirler ancak dokunma duyuları elektriksel direnç üzerinden çalışır."
+    },
+    {
+        "instruction": "Zogoria'da 'Renk Değiştirmek' ne anlama gelir?",
+        "response": "Bir Zogor'un ruh halinin veya sağlık durumunun değiştiğini gösteren doğal bir tepkidir."
+    },
+    {
+        "instruction": "Zogorların 'Tatili' nasıldır?",
+        "response": "Düşük yerçekimli bir bölgeye gidip Nabız Çevrimleri boyunca hiçbir veri akışına katılmadan süzülmek."
+    },
+    {
+        "instruction": "Zogoria'da 'Bitkisel İlaç' var mıdır?",
+        "response": "Evet, bazı bitkilerin özündeki radyoaktif sıvılar kristal çatlaklarını kapatmak için kullanılır."
+    },
+    {
+        "instruction": "Zogorlar 'Ayna'ya bakınca ne görür?",
+        "response": "Kendi iç enerjilerinin dışarı sızan renkli halesini."
+    },
+    {
+        "instruction": "Zogoria'da 'Enerji Sızıntısı' olursa ne yapılır?",
+        "response": "Bölge anında karantinaya alınır ve 'Foton Tamircileri' manyetik yamalarla sızıntıyı kapatır."
+    },
+    {
+        "instruction": "Zogorların 'Geleneksel Dansı'nın adı nedir?",
+        "response": "'Kromatik Vals'; katılımcıların birbirlerinin ışık tayfıyla uyum sağladığı bir dans."
+    },
+    {
+        "instruction": "Zogoria'da 'Yaşam Kaynağı' nedir?",
+        "response": "Gezegenin kalbindeki 'Sonsuz Füzyon Çekirdeği'."
+    },
+    {
+        "instruction": "Zogorlar 'Rüya Görmeme' hastalığına yakalanır mı?",
+        "response": "Evet, bu 'Zihinsel Kuraklık' olarak adlandırılır ve kişi toplumdan kopmaya başlar."
+    },
+    {
+        "instruction": "Zogoria'da 'Uçan Arabalar' park edilir mi?",
+        "response": "Hayır, kullanılmadıkları zaman manyetik bir askıda havada asılı kalırlar."
+    },
+    {
+        "instruction": "Zogorların 'En Eski Tapınağı' nerededir?",
+        "response": "İlk kristal Zogor'un oluştuğu 'Başlangıç Mağarası'ndadır."
+    },
+    {
+        "instruction": "Zogoria'da 'Sis' neden olur?",
+        "response": "Atmosferdeki iyonize gazların yoğunlaşarak ışığı kırması sonucu oluşan 'Işık Sisi'."
+    },
+    {
+        "instruction": "Zogorlar 'Kitap' okur mu?",
+        "response": "Kitap yerine, içine anıların yüklendiği 'Veri Küreleri'ni kullanırlar."
+    },
+    {
+        "instruction": "Zogoria'da 'Hava Kirliliği' neye sebep olur?",
+        "response": "Işığın kırılmasına ve Zogorların telepatik mesajlarının bozulmasına (Görsel Kekemelik)."
+    },
+    {
+        "instruction": "Zogorların 'Mühendis'leri neyi inşa eder?",
+        "response": "Genellikle manyetik alanları büken yapılar ve enerji nakil hatları."
+    },
+    {
+        "instruction": "Zogoria'da 'Fırtına' sesleri nasıldır?",
+        "response": "Yüksek voltajlı bir trafonun vızıltısına benzer, ritmik bir ses."
+    },
+    {
+        "instruction": "Zogorlar 'Dua' eder mi?",
+        "response": "Dua etmek yerine, evrenin enerjisiyle uyumlanmak için meditasyon yaparlar."
+    },
+    {
+        "instruction": "Zogoria'da 'Maden Ocağı'nda ne aranır?",
+        "response": "Enerji depolama kapasitesi yüksek olan 'Saf Safir' blokları."
+    },
+    {
+        "instruction": "Zogorların 'Spor Dalları' kaç tanedir?",
+        "response": "Zihinsel ve fiziksel olmak üzere temel 12 dal mevcuttur."
+    },
+    {
+        "instruction": "Zogoria'da 'Gökkuşağı' kaç renkledir?",
+        "response": "İnsan gözünün göremediği ultraviyole ve kızılötesi dahil 12 ana renk katmanından oluşur."
+    },
+    {
+        "instruction": "Zogorlar 'Güneş Sistemi'ni bilir mi?",
+        "response": "Evet, ancak dünyayı 'Çok Fazla Su İçeren İlkel Gezegen' olarak tanımlarlar."
+    },
+    {
+        "instruction": "Zogoria'da 'Kış' ne kadar soğuktur?",
+        "response": "Sıcaklık -270 santigrat dereceye kadar düşebilir."
+    },
+    {
+        "instruction": "Zogorların 'Robot Evcil Hayvanları' nasıldır?",
+        "response": "Sahibinin enerjisini temizleyen ve ona huzur veren 'Enerji Kedileri'."
+    },
+    {
+        "instruction": "Zogoria'da 'Yön' nasıl bulunur?",
+        "response": "Zogorlar gezegenin manyetik çizgilerini doğrudan hissedebilirler, pusulaya ihtiyaçları yoktur."
+    },
+    {
+        "instruction": "Zogorlar 'Yemek' tariflerini nasıl saklar?",
+        "response": "Tarif yoktur, sadece belirli bir enerji karışımının 'frekans formülü' vardır."
+    },
+    {
+        "instruction": "Zogoria'da 'Duvar'lar neyden yapılır?",
+        "response": "Işığı geçiren ama ısıyı tutan 'Akıllı Seramik'lerden."
+    },
+    {
+        "instruction": "Zogorların 'Bilgisayar'ları nasıldır?",
+        "response": "Bir işlemci yoktur; bilgiyi işlemek için bütün bir şehri kapsayan bir kuantum alanı kullanılır."
+    },
+    {
+        "instruction": "Zogoria'da 'Haberler' nasıl yayılır?",
+        "response": "Lümen-Ağı üzerinden tüm Zogorların zihnine anlık 'Işık Flaşları' olarak gönderilir."
+    },
+    {
+        "instruction": "Zogorlar 'Egzersiz' yapar mı?",
+        "response": "Evet, kristal yapılarını esnek tutmak için 'Titreşim Yogası' yaparlar."
+    },
+    {
+        "instruction": "Zogoria'da 'Yeraltı Suyu' var mıdır?",
+        "response": "Su yoktur, sadece aşırı basınçlı sıvı karbondioksit nehirleri vardır."
+    },
+    {
+        "instruction": "Zogorların 'En Büyük Düşmanı' kimdir?",
+        "response": "Zamanla kristallerini kemiren 'Entropi Parazitleri'."
+    },
+    {
+        "instruction": "Zogoria'da 'Okuma Yazma' oranı nedir?",
+        "response": "Herkes doğuştan veri aktarımına açık olduğu için %100'dür."
+    },
+    {
+        "instruction": "Zogorlar 'Gözlük' takar mı?",
+        "response": "Sadece çok parlak bölgelerde ışığı filtrelemek için 'Kromatik Kalkanlar' kullanırlar."
+    },
+    {
+        "instruction": "Zogoria'da 'Ağaç Kesmek' yasak mıdır?",
+        "response": "Evet, ağaçlar gezegenin enerji dengesini sağladığı için en ağır suçlardan biridir."
+    },
+    {
+        "instruction": "Zogorların 'Uzay Gemileri' nasıldır?",
+        "response": "Gemi yoktur; kendilerini bir enerji balonuna hapsedip manyetik fırlatıcılarla boşluğa atarlar."
+    },
+    {
+        "instruction": "Zogoria'da 'Doğum Günü' kutlanır mı?",
+        "response": "Hayır, 'Kristal Berraklığı Günü' adında, kişinin enerjisinin en saf olduğu gün kutlanır."
+    },
+    {
+        "instruction": "Zogorlar 'Gölge'den neden kaçınır?",
+        "response": "Gölge, onlar için şarj olamadıkları ve yavaş yavaş tükendikleri bir alandır."
+    },
+    {
+        "instruction": "Zogoria'da 'Altın'ın kullanım alanı nedir?",
+        "response": "Sadece binaların dış cephesinde iletkenlik artırıcı bir kaplama olarak kullanılır."
+    },
+    {
+        "instruction": "Zogorların 'Müzesi'nde ne sergilenir?",
+        "response": "Eski çağlardan kalma, artık yaygın olmayan ilkel kristal formlar."
+    },
+    {
+        "instruction": "Zogoria'da 'Işık Hızı' ölçülebilir mi?",
+        "response": "Atmosfer o kadar yoğundur ki ışık burada Dünya'dakinden %30 daha yavaş hareket eder."
+    },
+    {
+        "instruction": "Zogorlar 'Şehir Plancılığı'nı nasıl yapar?",
+        "response": "Binaları manyetik akış hatlarının üzerine, enerjiyi engellemeyecek şekilde yerleştirerek."
+    },
+    {
+        "instruction": "Zogoria'da 'Ölüm' bir son mudur?",
+        "response": "Hayır, sadece form değiştirip gezegenin genel enerji havuzuna katılmaktır."
+    },
+    {
+        "instruction": "Zogorların 'En Popüler Hobisi' nedir?",
+        "response": "Kendi yaydıkları ışıkla duvarda karmaşık gölge oyunları (ters sanat) yapmak."
+    },
+    {
+        "instruction": "Zogoria'da 'Zaman' geri alınabilir mi?",
+        "response": "Hayır, ancak 'Hafıza Odaları'nda geçmiş Nabız Çevrimleri birebir tekrar yaşanabilir."
+    },
+    {
+        "instruction": "Zogorlar 'Acı' hisseder mi?",
+        "response": "Fiziksel acı yerine, kristallerindeki 'yapısal gerilme'yi huzursuz edici bir frekans olarak hissederler."
+    }
+]
