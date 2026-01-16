@@ -7,9 +7,11 @@ if [ -e "/dev/kfd" ]; then
     export HSA_ENABLE_SDMA=0
     export HIP_VISIBLE_DEVICES=0
     export HIPBLASLT_ENABLE=0
-    export PYTORCH_HIP_ALLOC_CONF=garbage_collection_threshold:0.6,max_split_size_mb:256
+    export PYTORCH_HIP_ALLOC_CONF=garbage_collection_threshold:0.5,max_split_size_mb:128
     export ROCM_FORCE_SYNC_COPY=1
     export GPU_MAX_HW_QUEUES=1
+    export AMD_SERIALIZE_KERNEL=3
+    export AMD_SERIALIZE_COPY=3
 fi
 source ../finetune/bin/activate
 python check_env.py

@@ -70,15 +70,17 @@ training_args = SFTConfig(
     per_device_train_batch_size=1,
     gradient_accumulation_steps=16,
     num_train_epochs=30,
-    learning_rate=1e-4,
+    learning_rate=5e-5,
     fp16=False,
     bf16=False,
     logging_steps=1,
-    dataloader_num_workers=2,
+    dataloader_num_workers=0,
     output_dir="./out",
     optim="adamw_torch",
-    gradient_checkpointing=True,
-    max_grad_norm=0.3,
+    gradient_checkpointing=False,
+    max_grad_norm=0.5,
+    save_steps=50,
+    save_total_limit=2,
 )
 
 
