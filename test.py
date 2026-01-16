@@ -50,6 +50,7 @@ def phase_inference(args, mode):
         return_dict=True,
         device_map="auto",
         load_in_4bit=True,
+        trust_remote_code=True
     )
     # model.to(device)
 

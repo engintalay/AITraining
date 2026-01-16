@@ -24,10 +24,13 @@ if tokenizer.pad_token is None:
 
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
-    device_map={"": 0},
-    torch_dtype=torch.float16,
-    attn_implementation="eager"
+    device_map="cpu",
+    dtype=torch.float32,
+    attn_implementation="eager",
+    trust_remote_code=True,
+    low_cpu_mem_usage=True
 )
+model = model.to("cuda:0")
 
 lora_config = LoraConfig(
     r=16,
@@ -40,10 +43,9 @@ lora_config = LoraConfig(
 
 model = get_peft_model(model, lora_config)
 
-# Force-cast all parameters to float16 to avoid BFloat16 AMP error
+# Ensure all parameters are float32 for RDNA3 stability
 for param in model.parameters():
-    if param.dtype == torch.bfloat16:
-        param.data = param.data.to(torch.float16)
+    param.data = param.data.to(torch.float32)
 
 print("Verifying model dtypes:")
 dtypes = {}
@@ -65,17 +67,18 @@ def format_prompt(example):
     return text
 
 training_args = SFTConfig(
-    per_device_train_batch_size=args.batch_size,
-    gradient_accumulation_steps=args.grad_acc,
+    per_device_train_batch_size=1,
+    gradient_accumulation_steps=16,
     num_train_epochs=30,
-    learning_rate=1e-4, # Lowered LR
-    fp16=not args.no_fp16,
+    learning_rate=1e-4,
+    fp16=False,
     bf16=False,
     logging_steps=1,
-    dataloader_num_workers=4,
+    dataloader_num_workers=2,
     output_dir="./out",
     optim="adamw_torch",
     gradient_checkpointing=True,
+    max_grad_norm=0.3,
 )
 
 
