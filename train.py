@@ -10,8 +10,8 @@ from peft import LoraConfig, get_peft_model
 parser = argparse.ArgumentParser(description="Fine-tune a model.")
 parser.add_argument("data_file", type=str, nargs="?", default="data.json", help="Path to the data file.")
 parser.add_argument("--resume", action="store_true", help="Resume training from the latest checkpoint.")
-parser.add_argument("--batch_size", type=int, default=8, help="Batch size per device.")
-parser.add_argument("--grad_acc", type=int, default=2, help="Gradient accumulation steps.")
+parser.add_argument("--batch_size", type=int, default=2, help="Batch size per device.")
+parser.add_argument("--grad_acc", type=int, default=8, help="Gradient accumulation steps.")
 parser.add_argument("--no_fp16", action="store_true", help="Disable FP16 mixed precision.")
 args = parser.parse_args()
 
@@ -74,6 +74,8 @@ training_args = SFTConfig(
     logging_steps=1,
     dataloader_num_workers=4,
     output_dir="./out",
+    optim="adamw_torch",
+    gradient_checkpointing=True,
 )
 
 

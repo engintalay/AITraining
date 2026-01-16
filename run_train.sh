@@ -4,6 +4,7 @@ if [ -e "/dev/kfd" ]; then
     echo "AMD GPU detected. Applying ROCm compatibility overrides."
     export HSA_OVERRIDE_GFX_VERSION=11.0.0
     export ACCELERATE_MIXED_PRECISION=no
+    export HSA_ENABLE_SDMA=0
 fi
 source ../finetune/bin/activate
 python check_env.py
