@@ -8,7 +8,7 @@ Eğer `../finetune` klasörü mevcut değilse, aşağıdaki komutlarla oluşturu
 
 
 ```bash
-python3 -m venv ../finetune
+python3.12 -m venv ../finetune
 source ../finetune/bin/activate
 ```
 
@@ -21,9 +21,9 @@ source ../finetune/bin/activate
         pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
         ```
 
-    *   **AMD (ROCm 6.1):**
+    *   **AMD (ROCm 6.2.4):**
         ```bash
-        pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm6.2.4
+        pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/rocm6.2.4
         ```
     
     *   **CPU:**
@@ -119,8 +119,8 @@ Aşağıda ortamda yüklü olan temel kütüphaneler ve versiyonları listelenmi
 
 | Kütüphane | Versiyon |
 |-----------|----------|
-| python | 3.x |
-| torch | 2.5.1+cu121 |
+| python | 3.12 |
+| torch | 2.6.0+rocm6.2.4 |
 | transformers | 4.57.3 |
 | datasets | 4.4.2 |
 | peft | 0.18.0 |
@@ -138,7 +138,8 @@ Bu ortamı sıfırdan oluşturmak isterseniz aşağıdaki adımları takip edebi
 1. **Yeni bir sanal ortam oluşturun:**
 
 ```bash
-python3 -m venv finetune
+```bash
+python3.12 -m venv finetune
 source finetune/bin/activate
 ```
 
@@ -150,8 +151,8 @@ PyTorch (CUDA 12.1 destekli) ve diğer temel yapay zeka kütüphaneleri için:
 # Önce pip'i güncelleyin
 pip install --upgrade pip
 
-# PyTorch Kurulumu (CUDA 12.1)
-pip install torch==2.5.1+cu121 torchvision==0.20.1+cu121 torchaudio==2.5.1+cu121 --index-url https://download.pytorch.org/whl/cu121
+# PyTorch Kurulumu (AMD ROCm 6.2.4)
+pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/rocm6.2.4
 
 # Diğer Kütüphaneler
 pip install transformers==4.57.3 datasets==4.4.2 peft==0.18.0 trl==0.26.2 bitsandbytes==0.49.0 accelerate==1.12.0 huggingface-hub==0.36.0 python-dateutil==2.9.0.post0 pytz==2025.2 six==1.17.0
@@ -172,9 +173,9 @@ Yükleme komutu:
         pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
         ```
 
-    *   **AMD (ROCm 6.1):**
+    *   **AMD (ROCm 6.2.4):**
         ```bash
-        pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm6.2.4
+        pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/rocm6.2.4
         ```
     
     *   **CPU:**
