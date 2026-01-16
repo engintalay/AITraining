@@ -57,6 +57,18 @@ Ortamdan çıkmak için:
 deactivate
 ```
 
+## Önemli Not: AMD 780M / RDNA3 Kullanıcıları İçin
+Eğer **"HIP error: invalid device function"** hatası alırsanız, komutların başına şu ortam değişkenini ekleyerek çalıştırın:
+
+```bash
+HSA_OVERRIDE_GFX_VERSION=11.0.0 python3 ...
+```
+
+Örneğin:
+```bash
+HSA_OVERRIDE_GFX_VERSION=11.0.0 python train.py
+```
+
 ## Proje Kullanımı
 
 Bu proje, **TinyLlama-1.1B** modelini `data.json` içerisindeki verilerle eğitmek (finetune) ve test etmek için geliştirilmiştir.
