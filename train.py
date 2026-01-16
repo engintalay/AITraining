@@ -79,8 +79,9 @@ training_args = SFTConfig(
     optim="adamw_torch",
     gradient_checkpointing=False,
     max_grad_norm=0.5,
-    save_steps=50,
-    save_total_limit=2,
+    save_steps=10,
+    save_total_limit=3,
+    save_strategy="steps",
 )
 
 
