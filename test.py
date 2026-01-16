@@ -42,17 +42,15 @@ def phase_inference(args, mode):
         tokenizer.pad_token = tokenizer.eos_token
 
     print("Loading Base Model...")
-    # device = "cuda" if torch.cuda.is_available() else "cpu"
-    # print(f"Using device: {device}")
     
     model = AutoModelForCausalLM.from_pretrained(
         base_model_name,
         return_dict=True,
         device_map="auto",
-        load_in_4bit=True,
-        trust_remote_code=True
+        dtype=torch.float32,
+        trust_remote_code=True,
+        low_cpu_mem_usage=True
     )
-    # model.to(device)
 
     if mode == "lora":
         print("Loading LoRA Adapter...")
