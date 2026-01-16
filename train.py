@@ -93,5 +93,5 @@ trainer = SFTTrainer(
 )
 
 
-trainer.train(resume_from_checkpoint=args.resume)
+trainer.train(resume_from_checkpoint=True if args.resume else None)
 trainer.save_model()
