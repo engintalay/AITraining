@@ -2,8 +2,9 @@
 # Override for AMD 780M (RDNA3) compatibility
 export HSA_OVERRIDE_GFX_VERSION=11.0.0
 export ACCELERATE_MIXED_PRECISION=no
-source finetune/bin/activate
+source ../finetune/bin/activate
 
+python check_env.py
 echo ">>> Phase 1: Base Model Inference"
 python test.py Zogoria.test.json --mode base
 if [ $? -ne 0 ]; then echo "Phase 1 failed"; exit 1; fi

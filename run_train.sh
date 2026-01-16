@@ -5,8 +5,8 @@ if [ -e "/dev/kfd" ]; then
     export HSA_OVERRIDE_GFX_VERSION=11.0.0
     export ACCELERATE_MIXED_PRECISION=no
 fi
-source finetune/bin/activate
-
+source ../finetune/bin/activate
+python check_env.py
 # Handle arguments
 if [ "$1" == "reset" ]; then
     echo "Resetting training..."

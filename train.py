@@ -3,9 +3,9 @@ import torch
 import argparse
 import os
 from datasets import load_dataset
-from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig, TrainingArguments
-from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
+from transformers import AutoTokenizer, AutoModelForCausalLM, TrainingArguments
 from trl import SFTTrainer, SFTConfig
+from peft import LoraConfig, get_peft_model
 
 parser = argparse.ArgumentParser(description="Fine-tune a model.")
 parser.add_argument("data_file", type=str, nargs="?", default="data.json", help="Path to the data file.")
@@ -22,16 +22,11 @@ tokenizer = AutoTokenizer.from_pretrained(model_id)
 if tokenizer.pad_token is None:
     tokenizer.pad_token = tokenizer.eos_token
 
-quantization_config = BitsAndBytesConfig(
-    load_in_4bit=True,
-    bnb_4bit_compute_dtype=torch.float16
-)
-
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
-    quantization_config=quantization_config,
-    device_map="auto",
-    dtype=torch.float16
+    device_map={"": 0},
+    torch_dtype=torch.float16,
+    attn_implementation="eager"
 )
 
 lora_config = LoraConfig(
@@ -43,7 +38,6 @@ lora_config = LoraConfig(
     task_type="CAUSAL_LM"
 )
 
-model = prepare_model_for_kbit_training(model)
 model = get_peft_model(model, lora_config)
 
 # Force-cast all parameters to float16 to avoid BFloat16 AMP error
