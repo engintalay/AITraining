@@ -28,7 +28,7 @@ def run_inference(model, tokenizer, instruction):
     return output.strip()
 
 def phase_inference(args, mode):
-    peft_model_id = "./out"
+    peft_model_id = args.model_path if hasattr(args, 'model_path') else "./out"
     config = PeftConfig.from_pretrained(peft_model_id)
     base_model_name = config.base_model_name_or_path
 
@@ -110,6 +110,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("test_file", help="Path to test data JSON")
     parser.add_argument("--mode", choices=["base", "lora", "compare"], required=True)
+    parser.add_argument("--model_path", default="./out", help="Path to trained model")
     args = parser.parse_args()
 
     if args.mode == "compare":
