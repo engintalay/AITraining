@@ -2,6 +2,12 @@ import sys
 import torch
 import argparse
 import os
+
+# RDNA3 stability fixes
+os.environ["HSA_OVERRIDE_GFX_VERSION"] = "11.0.0"
+os.environ["PYTORCH_HIP_ALLOC_CONF"] = "max_split_size_mb:128"
+torch.backends.cuda.matmul.allow_tf32 = False
+
 from datasets import load_dataset
 from transformers import AutoTokenizer, AutoModelForCausalLM, TrainingArguments
 from trl import SFTTrainer, SFTConfig
@@ -24,13 +30,12 @@ if tokenizer.pad_token is None:
 
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
-    device_map="cpu",
+    device_map="auto",
     dtype=torch.float32,
     attn_implementation="eager",
     trust_remote_code=True,
     low_cpu_mem_usage=True
 )
-model = model.to("cuda:0")
 
 lora_config = LoraConfig(
     r=16,
@@ -82,6 +87,8 @@ training_args = SFTConfig(
     save_steps=10,
     save_total_limit=3,
     save_strategy="steps",
+    dataloader_pin_memory=False,
+    ddp_find_unused_parameters=False,
 )
 
 
